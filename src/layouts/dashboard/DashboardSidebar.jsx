@@ -12,8 +12,20 @@ import { MHidden } from '../../components/@material-extend';
 //
 import sidebarConfig from './SidebarConfig';
 import account from '../../_mocks_/account';
-
+import { firebase } from 'src/config/firebase-config';
 // ----------------------------------------------------------------------
+const SignInWithFirebase =()=>{
+  var google_provider = new firebase.auth.GoogleAuthProvider();
+  firebase.auth().signInWithPopup(google_provider)
+  .then((re)=>{
+      console.log(re);
+
+  })
+  .catch((err)=>{
+      console.log(err);
+  })
+}
+
 
 const DRAWER_WIDTH = 280;
 
@@ -82,43 +94,30 @@ export default function DashboardSidebar({ isOpenSidebar, onCloseSidebar }) {
 
       <Box sx={{ flexGrow: 1 }} />
 
-      <Box sx={{ px: 2.5, pb: 3, mt: 10 }}>
+      
         <Stack
           alignItems="center"
           spacing={3}
           sx={{
-            p: 2.5,
+            p: 3.5,
             pt: 5,
             borderRadius: 2,
             position: 'relative',
-            bgcolor: 'grey.200'
+            bgcolor: 'white',
           }}
         >
-          <Box
-            component="img"
-            src="/static/illustrations/illustration_avatar.png"
-            sx={{ width: 100, position: 'absolute', top: -50 }}
-          />
-
-          <Box sx={{ textAlign: 'center' }}>
-            <Typography gutterBottom variant="h6">
-              Get more?
-            </Typography>
-            <Typography variant="body2" sx={{ color: 'text.secondary' }}>
-              From only $69
-            </Typography>
-          </Box>
+         
+        
 
           <Button
             fullWidth
-            href="https://material-ui.com/store/items/minimal-dashboard/"
-            target="_blank"
+            onClick={SignInWithFirebase}
             variant="contained"
           >
-            Upgrade to Pro
+            Login with Google
           </Button>
         </Stack>
-      </Box>
+      
     </Scrollbar>
   );
 

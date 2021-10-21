@@ -77,6 +77,7 @@ const ERROR = {
   contrastText: '#fff'
 };
 
+
 const GRADIENTS = {
   primary: createGradient(PRIMARY.light, PRIMARY.main),
   info: createGradient(INFO.light, INFO.main),
