@@ -61,12 +61,15 @@ function MainContent() {
 }
 
 const Container = styled.div`
-  width: 80%;
-  height: 110vh;
-  background: linear-gradient(to bottom right, white 0%, #e6e4ff 70%);
-  border-top-left-radius: 2rem;
-  border-top-right-radius: 2rem;
-  margin: 1rem 4rem 1rem 4rem;
+width: 80%;
+flex-direction: column;
+display:flex;
+height: 110vh;
+background: linear-gradient(to bottom right, white 0%, #e6e4ff 70%);
+border-top-left-radius: 2rem;
+border-top-right-radius: 2rem;
+padding: 1rem;
+margin-left: 20%;
   @media screen and (min-width: 320px) and (max-width: 1080px) {
     display: flex;
     flex-direction: column;
@@ -128,6 +131,7 @@ const TitleText = styled.h3`
 `;
 
 const SectionTwo = styled.div`
+
   display: flex;
   margin-top:0;
   gap: 2rem;

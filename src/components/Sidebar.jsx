@@ -42,6 +42,7 @@ function Sidebar() {
 }
 
 const Container = styled.div`
+  position: fixed;
   width: 20%;
   height: 100vh !important;
   background-color: #091322;
