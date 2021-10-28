@@ -1,21 +1,23 @@
-// routes
-import Router from './routes';
-// theme
-import ThemeConfig from './theme';
-import GlobalStyles from './theme/globalStyles';
-// components
-import ScrollToTop from './components/ScrollToTop';
-import { BaseOptionChartStyle } from './components/charts/BaseOptionChart';
-
-// ----------------------------------------------------------------------
-
-export default function App() {
+import "./App.css";
+import styled from "styled-components";
+import Sidebar from "./components/Sidebar";
+import MainContent from "./components/MainContent";
+function App() {
   return (
-    <ThemeConfig>
-      <ScrollToTop />
-      <GlobalStyles />
-      <BaseOptionChartStyle />
-      <Router />
-    </ThemeConfig>
+    <Container>
+      <Sidebar />
+      <MainContent />
+    </Container>
   );
 }
+
+const Container = styled.div`
+  display: flex;
+  height: auto;
+  background: linear-gradient(to bottom right, white 0%, #e6e4ff 70%);
+  @media screen and (min-width: 320px) and (max-width: 1080px) {
+    flex-direction: column;
+  }
+`;
+
+export default App;
