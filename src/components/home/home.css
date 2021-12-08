@@ -1,0 +1,28 @@
+.bghome{
+    background-color: #ffffff;
+    height: 100vh;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@500;600&display=swap');
+
+.kanit600{
+    font-weight: 600;
+    font-size: 3rem;
+}
+
+.kanit500-home{
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+.top-new{
+    display: flex;
+    
+}
+
+.category-box{
+    background-color: #F4F4F4;
+    height: 120vh;
+    border-radius: 30px;
+    
+    
+}

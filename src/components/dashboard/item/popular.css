@@ -1,0 +1,14 @@
+.pop-head{
+    font-size: 1rem;
+    font-weight: 600;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    background-color: #b7d5d6;
+    padding-left: 0.5rem;
+}
+.pop-detail{
+    padding-left: 0.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    font-weight: 500;
+}

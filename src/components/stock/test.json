@@ -1,0 +1,949 @@
+{
+    "name": "projects/bonsai-c2608/databases/(default)/documents/Fundimental/ICN",
+    "fields": {
+      "S10YF": {
+        "mapValue": {
+          "fields": {
+            "stockTopic": {
+              "stringValue": "ICN"
+            },
+            "finanActCashFlow": {
+              "arrayValue": {
+                "values": [
+                  {
+                    "stringValue": "41.43"
+                  },
+                  {
+                    "stringValue": "-77.78"
+                  },
+                  {
+                    "stringValue": "21.96"
+                  },
+                  {
+                    "stringValue": "1.01"
+                  },
+                  {
+                    "stringValue": "-46.94"
+                  },
+                  {
+                    "stringValue": ""
+                  }
+                ]
+              }
+            },
+            "sellingServiceExpenses": {
+              "arrayValue": {
+                "values": [
+                  {
+                    "stringValue": "50.68"
+                  },
+                  {
+                    "stringValue": "61.24"
+                  },
+                  {
+                    "stringValue": "65.67"
+                  },
+                  {
+                    "stringValue": "74.36"
+                  },
+                  {
+                    "stringValue": "83.02"
+                  },
+                  {
+                    "stringValue": ""
+                  }
+                ]
+              }
+            },
+            "shareHolder": {
+              "arrayValue": {
+                "values": [
+                  {
+                    "stringValue": "165.10"
+                  },
+                  {
+                    "stringValue": "496.34"
+                  },
+                  {
+                    "stringValue": "519.05"
+                  },
+                  {
+                    "stringValue": "552.04"
+                  },
+                  {
+                    "stringValue": "573.70"
+                  },
+                  {
+                    "stringValue": ""
+                  }
+                ]
+              }
+            },
+            "totalDebt": {
+              "arrayValue": {
+                "values": [
+                  {
+                    "stringValue": "314.89"
+                  },
+                  {
+                    "stringValue": "474.92"
+                  },
+                  {
+                    "stringValue": "335.13"
+                  },
+                  {
+                    "stringValue": "634.00"
+                  },
+                  {
+                    "stringValue": "875.96"
+                  },
+                  {
+                    "stringValue": ""
+                  }
+                ]
+              }
+            },
+            "timeLine": {
+              "arrayValue": {
+                "values": [
+                  {
+                    "stringValue": "2559"
+                  },
+                  {
+                    "stringValue": "2560"
+                  },
+                  {
+                    "stringValue": "2561"
+                  },
+                  {
+                    "stringValue": "2562"
+                  },
+                  {
+                    "stringValue": "2563"
+                  },
+                  {
+                    "stringValue": "3/12/2564"
+                  }
+                ]
+              }
+            },
+            "grossProfit": {
+              "arrayValue": {
+                "values": [
+                  {
+                    "stringValue": "85.64"
+                  },
+                  {
+                    "stringValue": "145.23"
+                  },
+                  {
+                    "stringValue": "171.15"
+                  },
+                  {
+                    "stringValue": "190.19"
+                  },
+                  {
+                    "stringValue": "224.34"
+                  },
+                  {
+                    "stringValue": ""
+                  }
+                ]
+              }
+            },
+            "opCashFlow": {
+              "arrayValue": {
+                "values": [
+                  {
+                    "stringValue": "1.63"
+                  },
+                  {
+                    "stringValue": "1.36"
+                  },
+                  {
+                    "stringValue": "1.99"
+                  },
+                  {
+                    "stringValue": "4.58"
+                  },
+                  {
+                    "stringValue": "5.54"
+                  },
+                  {
+                    "stringValue": ""
+                  }
+                ]
+              }
+            },
+            "totalIncome": {
+              "arrayValue": {
+                "values": [
+                  {
+                    "stringValue": "570.96"
+                  },
+                  {
+                    "stringValue": "958.52"
+                  },
+                  {
+                    "stringValue": "1,017.95"
+                  },
+                  {
+                    "stringValue": "1,201.27"
+                  },
+                  {
+                    "stringValue": "1,470.80"
+                  },
+                  {
+                    "stringValue": ""
+                  }
+                ]
+              }
+            },
+            "netProfit": {
+              "arrayValue": {
+                "values": [
+                  {
+                    "stringValue": "27.11"
+                  },
+                  {
+                    "stringValue": "66.18"
+                  },
+                  {
+                    "stringValue": "84.78"
+                  },
+                  {
+                    "stringValue": "93.67"
+                  },
+                  {
+                    "stringValue": "111.65"
+                  },
+                  {
+                    "stringValue": ""
+                  }
+                ]
+              }
+            },
+            "header": {
+              "stringValue": "สรุปการเงิน 10 ปี"
+            },
+            "totalAsset": {
+              "arrayValue": {
+                "values": [
+                  {
+                    "stringValue": "480.00"
+                  },
+                  {
+                    "stringValue": "971.26"
+                  },
+                  {
+                    "stringValue": "854.18"
+                  },
+                  {
+                    "stringValue": "1,207.11"
+                  },
+                  {
+                    "stringValue": "1,472.47"
+                  },
+                  {
+                    "stringValue": ""
+                  }
+                ]
+              }
+            },
+            "depreciaNAmortiza": {
+              "arrayValue": {
+                "values": [
+                  {
+                    "stringValue": "27.11"
+                  },
+                  {
+                    "stringValue": "66.18"
+                  },
+                  {
+                    "stringValue": "84.78"
+                  },
+                  {
+                    "stringValue": "93.67"
+                  },
+                  {
+                    "stringValue": "111.65"
+                  },
+                  {
+                    "stringValue": ""
+                  }
+                ]
+              }
+            },
+            "investCashFlow": {
+              "arrayValue": {
+                "values": [
+                  {
+                    "stringValue": "-10.12"
+                  },
+                  {
+                    "stringValue": "16.91"
+                  },
+                  {
+                    "stringValue": "203.27"
+                  },
+                  {
+                    "stringValue": "-128.18"
+                  },
+                  {
+                    "stringValue": "80.13"
+                  },
+                  {
+                    "stringValue": ""
+                  }
+                ]
+              }
+            },
+            "EPS": {
+              "arrayValue": {
+                "values": [
+                  {
+                    "stringValue": "-41.66"
+                  },
+                  {
+                    "stringValue": "203.69"
+                  },
+                  {
+                    "stringValue": "-63.42"
+                  },
+                  {
+                    "stringValue": "61.60"
+                  },
+                  {
+                    "stringValue": "-15.35"
+                  },
+                  {
+                    "stringValue": ""
+                  }
+                ]
+              }
+            },
+            "subHeader": {
+              "stringValue": "(หน่วยล้านบาท)"
+            },
+            "PUShareValue": {
+              "arrayValue": {
+                "values": [
+                  {
+                    "stringValue": "115.00"
+                  },
+                  {
+                    "stringValue": "225.00"
+                  },
+                  {
+                    "stringValue": "225.00"
+                  },
+                  {
+                    "stringValue": "225.00"
+                  },
+                  {
+                    "stringValue": "225.00"
+                  },
+                  {
+                    "stringValue": ""
+                  }
+                ]
+              }
+            }
+          }
+        }
+      },
+      "S10YG": {
+        "mapValue": {
+          "fields": {
+            "netProfit": {
+              "arrayValue": {
+                "values": [
+                  {
+                    "stringValue": "27.11"
+                  },
+                  {
+                    "stringValue": "66.18"
+                  },
+                  {
+                    "stringValue": "84.78"
+                  },
+                  {
+                    "stringValue": "93.67"
+                  },
+                  {
+                    "stringValue": "111.65"
+                  },
+                  {
+                    "stringValue": ""
+                  }
+                ]
+              }
+            },
+            "ProfitPerStock": {
+              "arrayValue": {
+                "values": [
+                  {
+                    "stringValue": "2.36"
+                  },
+                  {
+                    "stringValue": "0.20"
+                  },
+                  {
+                    "stringValue": "0.19"
+                  },
+                  {
+                    "stringValue": "0.21"
+                  },
+                  {
+                    "stringValue": "0.25"
+                  },
+                  {
+                    "stringValue": ""
+                  }
+                ]
+              }
+            },
+            "header": {
+              "stringValue": "สรุปการเติบโต 10 ปี"
+            },
+            "totalIncome": {
+              "arrayValue": {
+                "values": [
+                  {
+                    "stringValue": "570.96"
+                  },
+                  {
+                    "stringValue": "958.52"
+                  },
+                  {
+                    "stringValue": "1,017.95"
+                  },
+                  {
+                    "stringValue": "1,201.27"
+                  },
+                  {
+                    "stringValue": "1,470.80"
+                  },
+                  {
+                    "stringValue": ""
+                  }
+                ]
+              }
+            },
+            "subHeader": {
+              "stringValue": "(หน่วยล้านบาท)"
+            },
+            "NPGrowthPerYear": {
+              "arrayValue": {
+                "values": [
+                  {
+                    "stringValue": ""
+                  },
+                  {
+                    "stringValue": "144.11"
+                  },
+                  {
+                    "stringValue": "28.11"
+                  },
+                  {
+                    "stringValue": "10.49"
+                  },
+                  {
+                    "stringValue": "19.19"
+                  },
+                  {
+                    "stringValue": ""
+                  }
+                ]
+              }
+            },
+            "PPSGrowthPerYear": {
+              "arrayValue": {
+                "values": [
+                  {
+                    "stringValue": ""
+                  },
+                  {
+                    "stringValue": "-91.63"
+                  },
+                  {
+                    "stringValue": "-4.54"
+                  },
+                  {
+                    "stringValue": "10.49"
+                  },
+                  {
+                    "stringValue": "20.09"
+                  },
+                  {
+                    "stringValue": ""
+                  }
+                ]
+              }
+            },
+            "timeLine": {
+              "arrayValue": {
+                "values": [
+                  {
+                    "stringValue": "2559"
+                  },
+                  {
+                    "stringValue": "2560"
+                  },
+                  {
+                    "stringValue": "2561"
+                  },
+                  {
+                    "stringValue": "2562"
+                  },
+                  {
+                    "stringValue": "2563"
+                  },
+                  {
+                    "stringValue": "3/12/2564"
+                  }
+                ]
+              }
+            },
+            "stockTopic": {
+              "stringValue": "ICN"
+            },
+            "TIGrowthPerYear": {
+              "arrayValue": {
+                "values": [
+                  {
+                    "stringValue": ""
+                  },
+                  {
+                    "stringValue": "67.88"
+                  },
+                  {
+                    "stringValue": "6.20"
+                  },
+                  {
+                    "stringValue": "18.01"
+                  },
+                  {
+                    "stringValue": "22.44"
+                  },
+                  {
+                    "stringValue": ""
+                  }
+                ]
+              }
+            }
+          }
+        }
+      },
+      "IS": {
+        "mapValue": {
+          "fields": {
+            "valuePerShare": {
+              "arrayValue": {
+                "values": [
+                  {
+                    "stringValue": ""
+                  },
+                  {
+                    "stringValue": "1.05"
+                  },
+                  {
+                    "stringValue": "1.15"
+                  },
+                  {
+                    "stringValue": "1.19"
+                  },
+                  {
+                    "stringValue": "1.30"
+                  },
+                  {
+                    "stringValue": "1.51"
+                  }
+                ]
+              }
+            },
+            "MarketCap": {
+              "arrayValue": {
+                "values": [
+                  {
+                    "stringValue": ""
+                  },
+                  {
+                    "stringValue": "1,260.00"
+                  },
+                  {
+                    "stringValue": "751.50"
+                  },
+                  {
+                    "stringValue": "715.50"
+                  },
+                  {
+                    "stringValue": "1,134.00"
+                  },
+                  {
+                    "stringValue": "3,015.00"
+                  }
+                ]
+              }
+            },
+            "header": {
+              "stringValue": "สถิติสำคัญ"
+            },
+            "P/BV": {
+              "arrayValue": {
+                "values": [
+                  {
+                    "stringValue": ""
+                  },
+                  {
+                    "stringValue": "2.66"
+                  },
+                  {
+                    "stringValue": "1.45"
+                  },
+                  {
+                    "stringValue": "1.33"
+                  },
+                  {
+                    "stringValue": "1.94"
+                  },
+                  {
+                    "stringValue": "4.44"
+                  }
+                ]
+              }
+            },
+            "yieldRatio": {
+              "arrayValue": {
+                "values": [
+                  {
+                    "stringValue": ""
+                  },
+                  {
+                    "stringValue": "0.00"
+                  },
+                  {
+                    "stringValue": "5.39"
+                  },
+                  {
+                    "stringValue": "8.81"
+                  },
+                  {
+                    "stringValue": "5.95"
+                  },
+                  {
+                    "stringValue": "2.69"
+                  }
+                ]
+              }
+            },
+            "timeLine": {
+              "arrayValue": {
+                "values": [
+                  {
+                    "stringValue": "2559"
+                  },
+                  {
+                    "stringValue": "2560"
+                  },
+                  {
+                    "stringValue": "2561"
+                  },
+                  {
+                    "stringValue": "2562"
+                  },
+                  {
+                    "stringValue": "2563"
+                  },
+                  {
+                    "stringValue": "3/12/2564"
+                  }
+                ]
+              }
+            },
+            "stockTopic": {
+              "stringValue": "ICN"
+            },
+            "P/E": {
+              "arrayValue": {
+                "values": [
+                  {
+                    "stringValue": ""
+                  },
+                  {
+                    "stringValue": "20.83"
+                  },
+                  {
+                    "stringValue": "8.92"
+                  },
+                  {
+                    "stringValue": "9.22"
+                  },
+                  {
+                    "stringValue": "9.88"
+                  },
+                  {
+                    "stringValue": "16.83"
+                  }
+                ]
+              }
+            },
+            "EV/EBITDA": {
+              "arrayValue": {
+                "values": [
+                  {
+                    "stringValue": ""
+                  },
+                  {
+                    "stringValue": "17.77"
+                  },
+                  {
+                    "stringValue": "6.70"
+                  },
+                  {
+                    "stringValue": "8.66"
+                  },
+                  {
+                    "stringValue": "11.55"
+                  },
+                  {
+                    "stringValue": "24.28"
+                  }
+                ]
+              }
+            },
+            "lastPrice": {
+              "arrayValue": {
+                "values": [
+                  {
+                    "stringValue": ""
+                  },
+                  {
+                    "stringValue": "2.80"
+                  },
+                  {
+                    "stringValue": "1.67"
+                  },
+                  {
+                    "stringValue": "1.59"
+                  },
+                  {
+                    "stringValue": "2.52"
+                  },
+                  {
+                    "stringValue": "6.70"
+                  }
+                ]
+              }
+            }
+          }
+        }
+      },
+      "ROF": {
+        "mapValue": {
+          "fields": {
+            "grossMargin": {
+              "arrayValue": {
+                "values": [
+                  {
+                    "stringValue": "15.00"
+                  },
+                  {
+                    "stringValue": "15.15"
+                  },
+                  {
+                    "stringValue": "16.81"
+                  },
+                  {
+                    "stringValue": "15.83"
+                  },
+                  {
+                    "stringValue": "15.25"
+                  },
+                  {
+                    "stringValue": ""
+                  }
+                ]
+              }
+            },
+            "timeLine": {
+              "arrayValue": {
+                "values": [
+                  {
+                    "stringValue": "2559"
+                  },
+                  {
+                    "stringValue": "2560"
+                  },
+                  {
+                    "stringValue": "2561"
+                  },
+                  {
+                    "stringValue": "2562"
+                  },
+                  {
+                    "stringValue": "2563"
+                  },
+                  {
+                    "stringValue": "3/12/2564"
+                  }
+                ]
+              }
+            },
+            "cashCycle": {
+              "arrayValue": {
+                "values": [
+                  {
+                    "stringValue": "22.19"
+                  },
+                  {
+                    "stringValue": "16.82"
+                  },
+                  {
+                    "stringValue": "-31.89"
+                  },
+                  {
+                    "stringValue": "-8.21"
+                  },
+                  {
+                    "stringValue": "-32.23"
+                  },
+                  {
+                    "stringValue": ""
+                  }
+                ]
+              }
+            },
+            "ROE": {
+              "arrayValue": {
+                "values": [
+                  {
+                    "stringValue": "16.42"
+                  },
+                  {
+                    "stringValue": "20.01"
+                  },
+                  {
+                    "stringValue": "16.70"
+                  },
+                  {
+                    "stringValue": "17.49"
+                  },
+                  {
+                    "stringValue": "19.84"
+                  },
+                  {
+                    "stringValue": ""
+                  }
+                ]
+              }
+            },
+            "saleNAdminRevenueRatio": {
+              "arrayValue": {
+                "values": [
+                  {
+                    "stringValue": "8.88"
+                  },
+                  {
+                    "stringValue": "6.39"
+                  },
+                  {
+                    "stringValue": "6.45"
+                  },
+                  {
+                    "stringValue": "6.19"
+                  },
+                  {
+                    "stringValue": "5.64"
+                  },
+                  {
+                    "stringValue": ""
+                  }
+                ]
+              }
+            },
+            "netProfitMargin": {
+              "arrayValue": {
+                "values": [
+                  {
+                    "stringValue": "4.75"
+                  },
+                  {
+                    "stringValue": "6.90"
+                  },
+                  {
+                    "stringValue": "8.33"
+                  },
+                  {
+                    "stringValue": "7.80"
+                  },
+                  {
+                    "stringValue": "7.59"
+                  },
+                  {
+                    "stringValue": ""
+                  }
+                ]
+              }
+            },
+            "ROA": {
+              "arrayValue": {
+                "values": [
+                  {
+                    "stringValue": "5.65"
+                  },
+                  {
+                    "stringValue": "9.12"
+                  },
+                  {
+                    "stringValue": "9.29"
+                  },
+                  {
+                    "stringValue": "9.09"
+                  },
+                  {
+                    "stringValue": "8.33"
+                  },
+                  {
+                    "stringValue": ""
+                  }
+                ]
+              }
+            },
+            "debt/fund": {
+              "arrayValue": {
+                "values": [
+                  {
+                    "stringValue": "1.91"
+                  },
+                  {
+                    "stringValue": "0.96"
+                  },
+                  {
+                    "stringValue": "0.65"
+                  },
+                  {
+                    "stringValue": "1.15"
+                  },
+                  {
+                    "stringValue": "1.53"
+                  },
+                  {
+                    "stringValue": ""
+                  }
+                ]
+              }
+            },
+            "stockTopic": {
+              "stringValue": "ICN"
+            },
+            "header": {
+              "stringValue": "อัตราส่วนทางการเงิน"
+            }
+          }
+        }
+      }
+    },
+    "createTime": "2021-12-04T06:24:14.444206Z",
+    "updateTime": "2021-12-04T06:24:14.444206Z"
+  }

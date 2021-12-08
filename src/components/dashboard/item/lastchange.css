@@ -1,0 +1,54 @@
+.index-change-topic{
+    padding-left: 2rem;
+    font-size: 1.15rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    font-weight: 500;
+    
+}
+.index-change-detail{
+    padding-left: 2rem;
+    font-size: 1.15rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+.index-change-head{
+    padding-left: 2rem;
+    font-size: 1.15rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    background-color: #b7d5d6;
+    font-weight: 500;
+    
+}
+.market-status{
+    padding-left: 2rem;
+    font-size: 1.15rem;
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+    font-weight: 500;
+}
+.mkt-detail{
+    padding-left: 2rem;
+    font-size: 1.15rem;
+    padding-top: 1rem;
+    
+}
+.volume-topic{
+    padding-left: 2rem;
+    font-size: 1.15rem;
+    padding-bottom: 0.5rem;
+    font-weight: 500;
+}
+.volume-detail{
+    padding-left: 2rem;
+    font-size: 1.15rem;
+    padding-bottom: 0.5rem;
+
+}
+.index-yield{
+    padding-left: 2rem;
+    font-size: 1.15rem;
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+}

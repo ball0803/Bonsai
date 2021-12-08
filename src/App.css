@@ -1,22 +1,123 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
-
-body {
-  font-family: "Poppins", sans-serif;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  background-color: #e6e4ff;
+*{
+    margin: 0;
+    padding: 0;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h5,
-a,
-ul,
-li {
-  margin: 0;
-  padding: 0;
+ul{
+    padding: 0;
+    margin: 0;
 }
+
+li{
+    list-style: none;
+}
+
+body{
+    background-color: #fff;
+    font-family: 'Kanit';
+}
+
+.side-menu{
+    position: fixed;
+    background: #59A0A4;
+    width: 250px;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 30px 0px 30px 25px;
+}
+
+.side-menu .logo{
+    width: 50px;
+    height: 50px;
+    margin: 0.5rem 0rem 1rem 0.5rem;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.side-menu .logo img{
+    max-width: 100%;
+    max-height: 100%;
+    width:65px;
+    position: absolute;
+    top:33px;
+    left:20px;
+}
+
+.side-menu .main-menu .menu-item{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    font-weight: 600;
+    margin-top: 0.5rem;
+    cursor: pointer;
+}
+
+.side-menu .main-menu .menu-item.active{
+    background: #fff;
+    border-radius: 25px 0px 0px 25px;
+    color: #000;
+}
+
+.side-menu .main-menu{
+    margin: 5px 0;
+    position: relative;
+    max-height: 250px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+/* not required any more */
+.side-menu.inactive .main-menu{
+   
+}
+
+.side-menu .main-menu .menu-item .menu-icon{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    line-height: 40px;
+    text-align: center;
+}
+
+.side-menu .main-menu .menu-item span{
+    position: absolute;
+    display: inline-block;
+    line-height: 40px;
+    opacity: 1;
+    transition: opacity .2s ease-in;
+}
+
+.divider{
+    width: 100%;
+    height: 1px;
+    border-radius: 1px;
+    background: #333;
+}
+
+.container{
+    margin-left: 250px;
+    transition: margin-left .2s ease-in;
+    padding: 50px;
+    box-sizing: border-box;
+}
+.top-section{
+    display: flex;
+    align-items: center;
+    
+}
+.side-name{
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 1.75rem;
+}
+.side-text{
+    color: #FFFFFF;
+    font-weight: 300;
+    font-size: 1.25rem;
+}
+.side-brand{
+    padding-left: 0.7rem ;
+    padding-bottom: 1rem;
+}
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');

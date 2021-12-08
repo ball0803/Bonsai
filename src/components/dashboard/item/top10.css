@@ -1,0 +1,51 @@
+.top10-select{
+    display: flex;
+    align-items: center;
+}
+
+.top10-set{
+    display: flex;
+    gap: 1rem;
+    background-color: #FFFFFF;
+    padding: 0.5rem;
+    border-radius: 45px;
+    width:10rem;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+.text-top10-w500{
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+.text-set10-w500{
+    font-weight: 500;
+    font-size: 1.2rem;
+    background-color: #C4C4C4;
+border-radius: 30px;
+width:4.9rem;
+justify-content: center;
+display: flex;
+}
+.top-select{
+    font-family: 'Kanit';
+    border-radius: 45px;
+    font-size: 1.15rem;
+    font-weight: 500;
+    display: flex;
+   
+    margin-left: 3rem;
+    height: 2.5rem;
+    width: 16rem;
+    cursor: pointer;
+    border: 0;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    
+}
+.top-compo{
+    background-color: #ffffff;
+    margin: 0.25rem;
+    border-radius: 15px;
+    overflow: hidden;
+    margin-top: 1.25rem;
+}

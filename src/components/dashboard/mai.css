@@ -1,0 +1,85 @@
+.setmai-bt-text{
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+.set-bt-mai{
+    background: #F0F0F0;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+    border: none;
+width: 5.5rem;
+height: 3rem;
+cursor: pointer;
+
+
+}
+.setmai-bt{
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+.mai-bt-mai{
+    background: #9FD976;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+    border: none;
+    width: 5.5rem;
+    height: 3rem;
+    cursor: pointer;
+
+}
+.market{
+    background: #F4F4F4;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 30px;
+max-width: 500px;
+height: 1900px;
+margin-top: 1rem;
+}
+
+.top10{
+    background: #F4F4F4;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+    max-width: 500px;
+    height: 1000px;
+    margin-top: 1rem;
+}
+.value{
+    background: #F4F4F4;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+    max-width: 500px;
+    height: 852px;
+    margin-top: 48px;
+}
+.market-over-topic-text-mai{
+    font-size: 1.25rem;
+    font-weight: 500;
+    padding-left: 1rem;
+    padding-right: 0.15rem;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    background-color: #FFFFFF;
+    border-radius: 45px;
+    width:10rem;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.market-over-topic-mai{
+    padding-left: 2rem;
+    padding-top: 1rem;
+    display: flex;
+    justify-items: center;
+}
+.mai-market-stat-topic-text{
+    font-size: 1.25rem;
+    font-weight: 500;
+    padding-left: 1rem;
+    padding-right: 0.15rem;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    background-color: #FFFFFF;
+    border-radius: 45px;
+    width:17rem;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
