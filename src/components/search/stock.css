@@ -157,20 +157,14 @@
     justify-content: center;
     align-items: center;
 }
-.containerB{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 20rem;
-    margin-top: 2rem;
-    height: 20%;
-    overflow-y: auto;
-}
 .suggest{
+    margin-top: 2rem;
+    height: 10rem;
+    overflow-y: auto;
+    width: 30rem;
     position: relative;
     display: flex;
     flex-direction: column;
-    /* overflow-y: scroll; */
     justify-content: center;
     align-items: center;
 }

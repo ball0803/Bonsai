@@ -1,5 +1,5 @@
 import React, { useState, useEffect,useMemo } from 'react';
-import { useLocation, useNavigate } from 'react-router-dom';
+import { useLocation, useNavigate, Link } from 'react-router-dom';
 import { createTheme, Typography } from "@mui/material";
 import "./stock.css";
 import { Box } from "@mui/system";
@@ -77,7 +77,6 @@ function Search() {
               </div>
             </form>
           </div>
-          <div className="containerB">
             <ul className="suggest">
             {
               stockList.filter((val)=>{
@@ -87,12 +86,10 @@ function Search() {
                   return val
                 }
               }).map((data)=>{
-                return <li onClick={navigate(`/search/${data}`)}>{data}</li>
+                return <li ><Link to={`/search/${data}`}>{data}</Link></li>
               })
             }
             </ul>
-
-          </div>
         </div>
       </Typography>
     </>
