@@ -20,7 +20,7 @@ import Mai from "./components/dashboard/mai";
 import ICN from "./components/stock/icn";
 import Fundimental from "./components/search/fundimental";
 
-import errorPage from "./components/errorPage";
+import ErrorPage from "./components/errorPage";
 
 import News from "./components/stock/new";
 import Search from "./components/search/searchs";
@@ -59,12 +59,13 @@ function App(){
               <Route exact path={"/"} element={<Welcome/>} />
               <Route path={"/home"} element={<Home/>} />
               <Route path={"/dashboard"} element={<Dashboard/>} />
+              <Route path={"/mai"} element={<Mai/>} />
               <Route path={"/setting"} element={<ICN/>} />
               <Route path={"/news"} element={<News/>} />
               <Route exact path={"/search"} element={<Search/>} />
               <Route exact path={"/search/:stock"} element={<Fundimental/>} />
-              <Route exact path={"/404"} element={<errorPage/>} />
-              <Route path="*" element={<errorPage/>}/>
+              <Route exact path={"/404"} element={<ErrorPage/>} />
+              <Route path="*" element={<ErrorPage/>}/>
             </Routes>}
         </div>
       </Router>

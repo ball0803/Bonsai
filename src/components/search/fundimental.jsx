@@ -39,7 +39,7 @@ function Fundimental() {
   const getField = (field1, field2) => {
     const data = userData.fields[field1].mapValue.fields[field2].arrayValue.values;
     return data.slice(
-      -6
+      -5
     )
   };
 
@@ -64,12 +64,12 @@ function Fundimental() {
         <div className="over">
           <Grid container>
             <Grid className="timeline" item xs={3.5}>
-              <p>{language}</p>
+              <p>{stock}</p>
             </Grid>
 
             {getField("IS", "timeLine")
               .map((info, idx) => (
-                <Grid className="timeline" item xs={1.25}>
+                <Grid className="timeline" item xs={1.7}>
                   {info.stringValue}
                 </Grid>
               ))}
@@ -81,7 +81,7 @@ function Fundimental() {
             {getField("IS", "lastPrice")
               .map(
               (info, idx) => (
-                <Grid className="light-table" item xs={1.25}>
+                <Grid className="light-table" item xs={1.7}>
                   {info.stringValue}
                 </Grid>
               )
@@ -94,7 +94,7 @@ function Fundimental() {
             {getField("IS", "MarketCap")
               .map(
               (info, idx) => (
-                <Grid className="dark-table" item xs={1.25}>
+                <Grid className="dark-table" item xs={1.7}>
                   {info.stringValue}
                 </Grid>
               )
@@ -108,7 +108,7 @@ function Fundimental() {
             {getField("IS", "P/E")
               .map(
               (info, idx) => (
-                <Grid className="light-table" item xs={1.25}>
+                <Grid className="light-table" item xs={1.7}>
                   {info.stringValue}
                 </Grid>
               )
@@ -121,7 +121,7 @@ function Fundimental() {
             {getField("IS", "P/BV")
               .map(
               (info, idx) => (
-                <Grid className="dark-table" item xs={1.25}>
+                <Grid className="dark-table" item xs={1.7}>
                   {info.stringValue}
                 </Grid>
               )
@@ -134,7 +134,7 @@ function Fundimental() {
             </Grid>
             {getField("IS", "valuePerShare")
               .map((info, idx) => (
-              <Grid className="light-table" item xs={1.25}>
+              <Grid className="light-table" item xs={1.7}>
                 {info.stringValue}
               </Grid>
             ))}
@@ -145,7 +145,7 @@ function Fundimental() {
             </Grid>
             {getField("IS", "yieldRatio")
               .map((info, idx) => (
-              <Grid className="dark-table" item xs={1.25}>
+              <Grid className="dark-table" item xs={1.7}>
                 {info.stringValue}
               </Grid>
             ))}
@@ -156,7 +156,7 @@ function Fundimental() {
             </Grid>
             {getField("IS", "EV/EBITDA")
               .map((info, idx) => (
-              <Grid className="light-table" item xs={1.25}>
+              <Grid className="light-table" item xs={1.7}>
                 {info.stringValue}
               </Grid>
             ))}
@@ -165,12 +165,12 @@ function Fundimental() {
         <Box className="fundamental-topic">สรุปการเติบโต</Box>
         <Grid container>
           <Grid className="timeline" item xs={3.5}>
-            <p>{language}</p>
+            <p>{stock}</p>
           </Grid>
           {getField("S10YG", "timeLine")
               .map(
             (info, idx) => (
-              <Grid className="timeline" item xs={1.25}>
+              <Grid className="timeline" item xs={1.7}>
                 {info.stringValue}
               </Grid>
             )
@@ -183,7 +183,7 @@ function Fundimental() {
           {getField("S10YG", "totalIncome")
               .map(
             (info, idx) => (
-              <Grid className="light-table" item xs={1.25}>
+              <Grid className="light-table" item xs={1.7}>
                 {info.stringValue}
               </Grid>
             )
@@ -196,7 +196,7 @@ function Fundimental() {
           {getField("S10YG", "TIGrowthPerYear")
               .map(
             (info, idx) => (
-              <Grid className="dark-table" item xs={1.25}>
+              <Grid className="dark-table" item xs={1.7}>
                 {info.stringValue}
               </Grid>
             )
@@ -210,7 +210,7 @@ function Fundimental() {
           {getField("S10YG", "netProfit")
               .map(
             (info, idx) => (
-              <Grid className="light-table" item xs={1.25}>
+              <Grid className="light-table" item xs={1.7}>
                 {info.stringValue}
               </Grid>
             )
@@ -222,7 +222,7 @@ function Fundimental() {
           </Grid>
            
           {getField("S10YG", "NPGrowthPerYear").map((info, idx) => (
-            <Grid className="dark-table" item xs={1.25}>
+            <Grid className="dark-table" item xs={1.7}>
               {info.stringValue}
             </Grid>
           ))}
@@ -233,7 +233,7 @@ function Fundimental() {
             <p>กำไรต่อหุ้น (EPS)</p>
           </Grid>
           {getField("S10YG", "ProfitPerStock").map((info, idx) => (
-            <Grid className="light-table" item xs={1.25}>
+            <Grid className="light-table" item xs={1.7}>
               {info.stringValue}
             </Grid>
           ))}
@@ -243,7 +243,7 @@ function Fundimental() {
             <p>การเติบโตต่อปีของกำไรต่อหุ้น (%)</p>
           </Grid>
           {getField("S10YG", "PPSGrowthPerYear").map((info, idx) => (
-            <Grid className="dark-table" item xs={1.25}>
+            <Grid className="dark-table" item xs={1.7}>
               {info.stringValue}
             </Grid>
           ))}
@@ -252,11 +252,11 @@ function Fundimental() {
         <Box className="fundamental-topic">อัตราส่วนทางการเงิน</Box>
         <Grid container>
           <Grid className="timeline" item xs={3.5}>
-            <p>{language}</p>
+            <p>{stock}</p>
           </Grid>
           {getField("ROF", "timeLine").map(
             (info, idx) => (
-              <Grid className="timeline" item xs={1.25}>
+              <Grid className="timeline" item xs={1.7}>
                 {info.stringValue}
               </Grid>
             )
@@ -268,7 +268,7 @@ function Fundimental() {
           </Grid>
           {getField("ROF", "ROA").map(
             (info, idx) => (
-              <Grid className="light-table" item xs={1.25}>
+              <Grid className="light-table" item xs={1.7}>
                 {info.stringValue}
               </Grid>
             )
@@ -280,7 +280,7 @@ function Fundimental() {
           </Grid>
           {getField("ROF", "ROE").map(
             (info, idx) => (
-              <Grid className="dark-table" item xs={1.25}>
+              <Grid className="dark-table" item xs={1.7}>
                 {info.stringValue}
               </Grid>
             )
@@ -292,7 +292,7 @@ function Fundimental() {
           </Grid>
           {getField("ROF", "grossMargin").map(
             (info, idx) => (
-              <Grid className="light-table" item xs={1.25}>
+              <Grid className="light-table" item xs={1.7}>
                 {info.stringValue}
               </Grid>
             )
@@ -305,7 +305,7 @@ function Fundimental() {
           </Grid>
           {getField("ROF", "saleNAdminRevenueRatio").map(
             (info, idx) => (
-              <Grid className="dark-table" item xs={1.25}>
+              <Grid className="dark-table" item xs={1.7}>
                 {info.stringValue}
               </Grid>
             )
@@ -316,7 +316,7 @@ function Fundimental() {
             <p>อัตรากำไรสุทธิ (%)</p>
           </Grid>
           {getField("ROF", "netProfitMargin").map((info, idx) => (
-            <Grid className="light-table" item xs={1.25}>
+            <Grid className="light-table" item xs={1.7}>
               {info.stringValue}
             </Grid>
           ))}
@@ -327,7 +327,7 @@ function Fundimental() {
             <p>หนี้สิน/ทุน (เท่า)</p>
           </Grid>
           {getField("ROF", "debt/fund").map((info, idx) => (
-            <Grid className="dark-table" item xs={1.25}>
+            <Grid className="dark-table" item xs={1.7}>
               {info.stringValue}
             </Grid>
           ))}
@@ -337,7 +337,7 @@ function Fundimental() {
             <p>วงจรเงินสด (วัน)</p>
           </Grid>
           {getField("ROF", "cashCycle").map((info, idx) => (
-            <Grid className="light-table" item xs={1.25}>
+            <Grid className="light-table" item xs={1.7}>
               {info.stringValue}
             </Grid>
           ))}
@@ -345,11 +345,11 @@ function Fundimental() {
         <Box className="fundamental-topic">สรุปการเงิน</Box>
         <Grid container>
           <Grid className="timeline" item xs={3.5}>
-            <p>{language}</p>
+            <p>{stock}</p>
           </Grid>
           {getField("S10YF", "timeLine").map(
             (info, idx) => (
-              <Grid className="timeline" item xs={1.25}>
+              <Grid className="timeline" item xs={1.7}>
                 {info.stringValue}
               </Grid>
             )
@@ -360,7 +360,7 @@ function Fundimental() {
             <p>สินทรัพย์รวม</p>
           </Grid>
           {getField("S10YF", "totalAsset").map((info, idx) => (
-            <Grid className="light-table" item xs={1.25}>
+            <Grid className="light-table" item xs={1.7}>
               {info.stringValue}
             </Grid>
           ))}
@@ -370,7 +370,7 @@ function Fundimental() {
             <p>หนี้สินรวม</p>
           </Grid>
           {getField("S10YF", "totalDebt").map((info, idx) => (
-            <Grid className="dark-table" item xs={1.25}>
+            <Grid className="dark-table" item xs={1.7}>
               {info.stringValue}
             </Grid>
           ))}
@@ -380,7 +380,7 @@ function Fundimental() {
             <p>ส่วนของผู้ถือหุ้น</p>
           </Grid>
           {getField("S10YF", "shareHolder").map((info, idx) => (
-            <Grid className="light-table" item xs={1.25}>
+            <Grid className="light-table" item xs={1.7}>
               {info.stringValue}
             </Grid>
           ))}
@@ -390,7 +390,7 @@ function Fundimental() {
           <p>มูลค่าหุ้นที่เรียกชำระแล้ว</p>
         </Grid>
         {getField("S10YF", "PUShareValue").map((info, idx) => (
-          <Grid className="dark-table" item xs={1.25}>
+          <Grid className="dark-table" item xs={1.7}>
             {info.stringValue}
           </Grid>
         ))}
@@ -400,7 +400,7 @@ function Fundimental() {
           <p>รายได้รวม</p>
         </Grid>
         {getField("S10YF", "totalIncome").map((info, idx) => (
-          <Grid className="light-table" item xs={1.25}>
+          <Grid className="light-table" item xs={1.7}>
             {info.stringValue}
           </Grid>
         ))}
@@ -410,7 +410,7 @@ function Fundimental() {
           <p>กำไรขั้นต้น</p>
         </Grid>
         {getField("S10YF", "grossProfit").map((info, idx) => (
-          <Grid className="dark-table" item xs={1.25}>
+          <Grid className="dark-table" item xs={1.7}>
             {info.stringValue}
           </Grid>
         ))}
@@ -420,7 +420,7 @@ function Fundimental() {
           <p>ค่าใช้จ่ายในการขายและบริหาร</p>
         </Grid>
         {getField("S10YF", "sellingServiceExpenses").map((info, idx) => (
-          <Grid className="light-table" item xs={1.25}>
+          <Grid className="light-table" item xs={1.7}>
             {info.stringValue}
           </Grid>
         ))}
@@ -430,7 +430,7 @@ function Fundimental() {
           <p>กำไรสุทธิ</p>
         </Grid>
         {getField("S10YF", "depreciaNAmortiza").map((info, idx) => (
-          <Grid className="dark-table" item xs={1.25}>
+          <Grid className="dark-table" item xs={1.7}>
             {info.stringValue}
           </Grid>
         ))}
@@ -440,7 +440,7 @@ function Fundimental() {
           <p>ค่าเสื่อมราคาและค่าตัดจำหน่าย</p>
         </Grid>
         {getField("S10YF", "opCashFlow").map((info, idx) => (
-          <Grid className="light-table" item xs={1.25}>
+          <Grid className="light-table" item xs={1.7}>
             {info.stringValue}
           </Grid>
         ))}
@@ -450,7 +450,7 @@ function Fundimental() {
           <p>กระแสเงินสดจากการดำเนินงาน</p>
         </Grid>
         {getField("S10YF", "investCashFlow").map((info, idx) => (
-          <Grid className="dark-table" item xs={1.25}>
+          <Grid className="dark-table" item xs={1.7}>
             {info.stringValue}
           </Grid>
         ))}
@@ -460,7 +460,7 @@ function Fundimental() {
           <p>กระแสเงินสดจากการลงทุน</p>
         </Grid>
         {getField("S10YF", "finanActCashFlow").map((info, idx) => (
-          <Grid className="light-table" item xs={1.25}>
+          <Grid className="light-table" item xs={1.7}>
             {info.stringValue}
           </Grid>
         ))}
@@ -471,7 +471,7 @@ function Fundimental() {
         </Grid>
         {getField("S10YF", "EPS").map(
           (info, idx) => (
-            <Grid className="dark-table" item xs={1.25}>
+            <Grid className="dark-table" item xs={1.7}>
               {info.stringValue}
             </Grid>
           )
@@ -482,7 +482,7 @@ function Fundimental() {
           <p>กำไรต่อหุ้น (EPS)</p>
         </Grid>
         {getField("S10YG", "ProfitPerStock").map((info, idx) => (
-          <Grid className="light-table" item xs={1.25}>
+          <Grid className="light-table" item xs={1.7}>
             {info.stringValue}
           </Grid>
         ))}

@@ -107,3 +107,8 @@
     align-items: center;
     height: 2.4rem;
 }
+.suggest-detail{
+    padding-top: 0.15rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}

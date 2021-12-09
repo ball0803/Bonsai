@@ -65,7 +65,7 @@ function Search() {
               <Box className="logo-text">Bonsai</Box>
           </div>
           <div className="searchbar">
-            <form onSubmit={submitAction} className='searchbox'>
+            <form onSubmit={submitAction}  className='searchbox'>
               <div className='input-group'>
               <input
                 type='text'
@@ -86,7 +86,7 @@ function Search() {
                   return val
                 }
               }).map((data)=>{
-                return <li ><Link to={`/search/${data}`}>{data}</Link></li>
+                return <Link class="alink" to={`/search/${data}`}><div className="suggest-detail" ><li>{data}</li></div></Link>
               })
             }
             </ul>

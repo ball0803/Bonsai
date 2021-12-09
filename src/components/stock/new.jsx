@@ -9,6 +9,7 @@ import { FaRegNewspaper } from "react-icons/fa";
 import { IoIosArrowForward } from "react-icons/io";
 import { useEffect } from "react";
 import { Grid } from "@mui/material";
+import app from "../../Firebase";
 
 const theme = createTheme({
   typography: {
@@ -20,7 +21,8 @@ const theme = createTheme({
 });
 
 function News() {
-    return (
+    
+  return (
       <div>
            <Typography component="div" theme={theme}>
            <Box className="stock-title">ICN</Box>

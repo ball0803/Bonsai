@@ -1,11 +1,13 @@
+import { Box } from '@mui/system'
 import React from 'react'
 
-const errorPage = () => {
+const ErrorPage = () => {
     return (
-        <>
-            <h1>404 PAGE NOT FOUND</h1>   
-        </>
+        <div>
+            <h1>404 PAGE NOT FOUND</h1> 
+            <Box>คำแนะนำ: โปรดกดSearch อีกครั้งเพื่อค้นหาชื่อหุ้นที่มีในตลาดหลักทรัพย์แห่งประเทศไทย</Box>  
+        </div>
     )
 }
 
-export default errorPage
+export default ErrorPage
