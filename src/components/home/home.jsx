@@ -5,7 +5,7 @@ import { Typography,Box,createTheme } from '@mui/material';
 import { Grid} from '@mui/material';
 import RecentNew from './item/recent';
 import RecommendNew from './item/recomment';
-import Sidebar from '../sidebar';
+import Sidebar from '../Sidebar';
 
 
 const theme = createTheme({

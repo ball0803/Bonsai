@@ -5,7 +5,7 @@ import React, { Component } from "react";
 import {
   BrowserRouter as Router,
   Route,
-  Switch,
+  Routes,
   Link,
   Redirect
 } from "react-router-dom";
@@ -18,12 +18,12 @@ import Welcome from "./components/welcome";
 import Dashboard from "./components/dashboard/dashboard";
 import Mai from "./components/dashboard/mai";
 import ICN from "./components/stock/icn";
+import Fundimental from "./components/search/fundimental";
 
-
-
+import errorPage from "./components/errorPage";
 
 import News from "./components/stock/new";
-import Search from "./components/search/search";
+import Search from "./components/search/searchs";
 
 function App(){
   const [inactive, setInactive] = useState(false);
@@ -41,7 +41,7 @@ function App(){
           {/* improvememt, not recorded in video, its just looping through menuItems
           instead of hard coding all the routes */}
           {menuItems.map((menu, index) => (
-            <>
+            <Routes>
               <Route key={menu.name} exact={menu.exact} path={menu.to}>
                 
               </Route>
@@ -52,38 +52,20 @@ function App(){
                     </Route>
                   ))
                 : null}
-            </>
+            </Routes>
           ))}
 
-          { <Switch>
-            <Route exact path={"/"}>
-              <Welcome/>
-            </Route>
-            <Route path={"/home"}>
-              <Home/>
-            </Route>
-            
-            <Route path={"/dashboard"}>
-              <Dashboard/>
-            </Route>
-            <Route path={"/mai"}>
-              <Mai/>
-            </Route>
-            <Route path={"/setting"}>
-              <ICN/>
-            </Route>
-            <Route path={"/news"}>
-              <News/>
-            </Route>
-            <Route path={"/search"}>
-              <Search/>
-            </Route>
-              
-
-
-
-
-          </Switch> }
+          {<Routes>
+              <Route exact path={"/"} element={<Welcome/>} />
+              <Route path={"/home"} element={<Home/>} />
+              <Route path={"/dashboard"} element={<Dashboard/>} />
+              <Route path={"/setting"} element={<ICN/>} />
+              <Route path={"/news"} element={<News/>} />
+              <Route exact path={"/search"} element={<Search/>} />
+              <Route exact path={"/search/:stock"} element={<Fundimental/>} />
+              <Route exact path={"/404"} element={<errorPage/>} />
+              <Route path="*" element={<errorPage/>}/>
+            </Routes>}
         </div>
       </Router>
     );
