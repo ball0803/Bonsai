@@ -151,5 +151,26 @@
     padding-left:1rem ;
 }
 .firstpage-search{
-    margin-top:8rem;
+    margin-top:2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.containerB{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20rem;
+    margin-top: 2rem;
+    height: 20%;
+    overflow-y: auto;
+}
+.suggest{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    /* overflow-y: scroll; */
+    justify-content: center;
+    align-items: center;
 }
