@@ -63,7 +63,7 @@ body{
     margin: 5px 0;
     position: relative;
     max-height: 250px;
-    overflow-y: scroll;
+    overflow-y: hidden;
     overflow-x: hidden;
 }
 /* not required any more */
@@ -109,7 +109,8 @@ body{
 .side-name{
     color: #FFFFFF;
     font-weight: 500;
-    font-size: 1.75rem;
+    font-size: 2rem;
+    margin-bottom: -0.5rem;
 }
 .side-text{
     color: #FFFFFF;

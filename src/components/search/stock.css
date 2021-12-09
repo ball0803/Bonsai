@@ -1,0 +1,155 @@
+.stock-title{
+    font-weight: 600;
+    font-size: 3rem;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.fund-box{
+    margin-top: 2rem;
+}
+.link-new{
+    background-color: #F1F1F1;
+    max-width:7.75rem;
+    height: 2.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 4px solid #C4C4C4;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.linkto-new{
+    text-decoration: none;
+    display: flex;
+    color: black;
+    align-items: center;
+}
+.link-new-text{
+    font-weight: 400;
+    font-family: 'Kanit';
+    font-size: 1rem;
+}
+.link-logo{
+    font-size: 1.15rem;
+    margin-top: 0.1rem;
+}
+.link-fundamental{
+    background-color: #F1F1F1;
+    width:10.5rem;
+    height: 2.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 4px solid #C4C4C4;
+    border-radius: 30px;
+    cursor: pointer;
+
+}
+.link-fundamental-text{
+    font-weight: 400;
+    font-family: 'Kanit';
+    font-size: 1rem;
+}
+.fundamental-topic{
+    font-weight: 500;
+    font-size: 1.75rem;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+}
+.fundamental-detail{
+    display: flex;
+}
+
+.timeline{
+    background-color: #b7d5d6;
+    padding-bottom: 0.75rem;
+    padding-left: 1rem;
+    padding-top: 0.75rem;
+}
+.light-table{
+    background-color: #f3f3f3;
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+.dark-table{
+    background-color: #d1d1d1;
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+.topic-dark-table{
+    background-color: #d1d1d1;
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    
+}
+.topic-light-table{
+    background-color: #f3f3f3;
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+.timeline-topic{
+    background-color: #b7d5d6;
+    padding-left: 1rem;
+    padding-top: 0.75rem;
+}
+.overlink{
+    display: flex;
+    width: 9.75rem;
+    align-items: center;
+    height: 2.4rem;
+}
+.overlink-new{
+    display: flex;
+    width: 7.5rem;
+    align-items: center;
+    height: 2.4rem;
+}
+.input-group{
+    display: flex;
+    align-items: center;
+}
+.searchbar{
+    display: flex;
+    justify-content: center;
+    margin-left: 2rem;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+
+}
+.logo-text{
+    font-weight: 500;
+    font-size: 8rem;
+}
+.form-control{
+    display: block;
+    height: 46px;
+    text-transform:uppercase;
+    padding: 0 200px 0 36px;
+    background: #fff;
+    border-radius: 30px;
+    outline: none;
+    font-family: "Kanit";
+    font-size: 1rem;
+    text-align: left;
+    text-overflow: ellipsis;
+    line-height: 36px;
+    -webkit-appearance: none;
+}
+.search-button{
+    font-size: 1rem;
+    padding: 0.25rem 0.5rem 0.25rem 0.5rem;
+    border-radius: 15rem;
+    background-color: aquamarine;
+}
+.button-compo{
+    padding-left:1rem ;
+}
+.firstpage-search{
+    margin-top:8rem;
+}

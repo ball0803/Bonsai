@@ -31,6 +31,9 @@
     top: 5rem;
     display: flex;
     align-items: center;
+
+    padding-top: 1%;
+    padding-left: 3% ;
 }
 
 .bonsai-logo{
@@ -47,8 +50,6 @@
     color: #fff;
 }
 
-
-
 .main-bottom{
     display: flex;
     align-items: center;
@@ -56,7 +57,6 @@
     margin-top: 20rem;
     position: absolute;
     right: 0rem;
-    
 }
 
 .button-68 {
@@ -106,20 +106,19 @@
   box-shadow: rgba(39, 174, 96, .2) 0 6px 12px;
 }
 
-
 .bt{
     display: flex;
     justify-content: center;
     gap: 2rem;
-    margin: 3rem;
+
+    margin-top: 3rem;
 }
+
 .bt-text{
-    padding-top: 5rem;
     width: 40%;
     margin-left: 10rem;
-    
+    padding-top: 7%;
     padding-right: 2rem;
-    
 }
 
 .button-33 {

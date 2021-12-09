@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import logo from "../assets/Logo.svg";
-import user from "../assets/user.jpg";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import MenuItem from "./MenuItem";
 import { Typography,Box,createTheme } from '@mui/material';
