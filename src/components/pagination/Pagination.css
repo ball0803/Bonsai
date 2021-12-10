@@ -30,3 +30,24 @@
     min-height: 100%;
     overflow: hidden;
 }
+.page-item{
+   margin-top: 3rem;
+
+    
+}
+.pagination{
+    display: flex;
+    justify-content: center;
+    
+}
+.pagination :hover{
+    background-color: #59A0A4;
+    color: #ffffff;
+   
+}
+
+.page-link{
+    padding: 10px;
+    
+    cursor: pointer;
+}

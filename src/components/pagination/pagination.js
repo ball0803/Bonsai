@@ -1,3 +1,4 @@
+import { Box } from '@mui/system';
 import React from 'react';
 
 const Pagination = ({ postsPerPage, totalPosts, paginate }) => {
@@ -9,15 +10,16 @@ const Pagination = ({ postsPerPage, totalPosts, paginate }) => {
 
   return (
     <nav>
-      <ul className='pagination'>
+      <div className='pagination'>
         {pageNumbers.map(number => (
-          <li key={number} className='page-item'>
+          <Box key={number} className='page-item'>
             <a onClick={() => paginate(number)} className='page-link'>
               {number}
             </a>
-          </li>
+           
+          </Box>
         ))}
-      </ul>
+      </div>
     </nav>
   );
 };

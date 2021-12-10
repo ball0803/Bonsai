@@ -4,7 +4,7 @@ import Pagination from './pagination';
 import {db} from "../../Firebase";
 import { doc, onSnapshot, collection, query, where, getDocs, limit, orderBy, toDate } from "firebase/firestore";
 import "./Pagination.css";
-
+import { Box } from '@mui/system';
 const Loading = () => {
   const [posts, setPosts] = useState([]);
   const [loading, setLoading] = useState(false);
@@ -37,12 +37,14 @@ const Loading = () => {
 
   return (
     <>
+    <Box className="stock-title">Recent News</Box>
       <Posts posts={currentPosts} loading={loading} />
       <Pagination
         postsPerPage={postsPerPage}
         totalPosts={posts.length}
         paginate={paginate}
       />
+      <Box>Page: {currentPage}</Box>
     </>
   );
 };
