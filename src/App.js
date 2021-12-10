@@ -58,14 +58,14 @@ function App(){
 
           {<Routes>
               <Route exact path={"/"} element={<Welcome/>} />
-              <Route path={"/home"} element={<Home/>} />
+        
               <Route path={"/dashboard"} element={<Dashboard/>} />
               <Route path={"/mai"} element={<Mai/>} />
               <Route path={"/setting"} element={<ICN/>} />
               <Route path={"/news"} element={<News/>} />
               <Route exact path={"/search"} element={<Search/>} />
               <Route exact path={"/search/:stock"} element={<Fundimental/>} />
-              <Route exact path={"/search/home"} element={<PaginatedItems itemsPerPage={20} />} />
+              <Route exact path={"/home"} element={<PaginatedItems itemsPerPage={9} />} />
               <Route exact path={"/404"} element={<ErrorPage/>} />
               <Route path="*" element={<ErrorPage/>}/>
             </Routes>}

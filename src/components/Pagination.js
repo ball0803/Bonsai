@@ -4,6 +4,9 @@ import {db} from "../Firebase";
 import { doc, onSnapshot, collection, query, where, getDocs, limit, orderBy, toDate } from "firebase/firestore";
 import { async } from '@firebase/util';
 // Example items, to simulate fetching from another resources.
+import { Grid } from '@mui/material';
+import { Box } from '@mui/system';
+import "./Pagination.css";
 
 function Post({ currentItems }) {
   // const dateArray = []
@@ -12,26 +15,30 @@ function Post({ currentItems }) {
   //   console.log(item.date)
   //   dateArray.push(d)
   // })
+ 
   
   return (
-    <>
-    <ul>
+    <div>
+    <Grid container rowSpacing={3} columnSpacing={{ xs: 2, sm: 3, md: 4 }}>
       {currentItems &&
         currentItems.map((item, index) => (
-          <li>
+          <Grid item xs={4}>
             {
               
             }
-            <a href={item.link}>
-              {item.pic ? <img src={item.pic} alt="" /> : null}
-              <h1 className="hearder">{item.header}</h1>
-              {item.summary ? <p>{item.summary}</p> : null}
-              <time dateTime={item.date}>{item.date.toDate().toDateString()}</time>
+            <a class="link-newbox" href={item.link} target="_blank">
+            <div className="new-box">
+              {item.pic ? <img src={item.pic==='https://sp-ao.shortpixel.ai/client/q_lossless,ret_img/https://www.mitihoon.com/wp-content/uploads/2017/12/Blue-150x100.jpg' ? 'https://www.mitihoon.com/wp-content/uploads/2018/01/mitihoon.jpg':item.pic} alt="" width="100%"/> : <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsaCI-qKlHLUj70F15CT6NDY6ku49oiDRK__BYPuBGDz0lz-7CxCRx78qVDO-0Kku2d6c&usqp=CAU" alt="" width="100%"/>}
+              <Box className="hearder">{item.header}</Box>
+              {item.summary ? <Box className="summary">{item.summary.slice(0,100)}...</Box> : null}
+              <Box className="date"><time dateTime={item.date}>{item.date.toDate().toDateString()}</time></Box>
+              </div>
             </a>
-          </li>
+            
+          </Grid>
         ))}
-    </ul>
-    </>
+    </Grid>
+    </div>
   );
 }
 
@@ -73,7 +80,7 @@ function PaginatedItems({ itemsPerPage }) {
     setItemOffset(newOffset);
   };
   return (
-    <>
+    <div>
       <Post currentItems={Item.slice(itemOffset ,EndOffset)}/>
       <ReactPaginate
         breakLabel="..."
@@ -84,7 +91,7 @@ function PaginatedItems({ itemsPerPage }) {
         previousLabel="< previous"
         renderOnZeroPageCount={null}
       />
-    </>
+    </div>
   );
 }
 
