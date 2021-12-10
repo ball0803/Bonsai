@@ -15,7 +15,7 @@ const Loading = () => {
     const fetchPosts = async () => {
       setLoading(true);
       const newsRef = collection(db, "News");
-      const q = query(newsRef, orderBy('date', 'desc'), limit(200))
+      const q = query(newsRef, orderBy('date', 'desc'), limit(90))
         onSnapshot(q, (snapshot)=>{
             snapshot.docs.map((doc)=>{
             setPosts(posts => [...posts, doc.data()])

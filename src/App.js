@@ -62,7 +62,7 @@ function App(){
               <Route path={"/dashboard"} element={<Dashboard/>} />
               <Route path={"/mai"} element={<Mai/>} />
               <Route path={"/setting"} element={<ICN/>} />
-              <Route path={"/news"} element={<News/>} />
+              <Route exact path={"/news/:stock"} element={<News/>} />
               <Route exact path={"/search"} element={<Search/>} />
               <Route exact path={"/search/:stock"} element={<Fundimental/>} />
               <Route exact path={"/home"} element={<Loading />} />
