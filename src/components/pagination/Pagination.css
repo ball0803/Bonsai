@@ -1,0 +1,32 @@
+.hearder{
+    color: black;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 22px ;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    
+}
+.link-newbox{
+    text-decoration: none;
+}
+.summary{
+    font-size: 12px;
+    font-weight: 500;
+    color: black;
+
+    padding: 0 1rem 0.5rem 1rem;
+}
+.date{
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: #757575;
+    padding: 0 0 1rem 1rem;
+
+}
+.new-box{
+    background: #d8e4e4;
+    border-radius: 30px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    min-height: 100%;
+    overflow: hidden;
+}

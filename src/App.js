@@ -19,7 +19,7 @@ import Dashboard from "./components/dashboard/dashboard";
 import Mai from "./components/dashboard/mai";
 import ICN from "./components/stock/icn";
 import Fundimental from "./components/search/fundimental";
-import PaginatedItems from "./components/Pagination";
+import Loading from "./components/pagination/loading";
 
 import ErrorPage from "./components/errorPage";
 
@@ -65,7 +65,7 @@ function App(){
               <Route path={"/news"} element={<News/>} />
               <Route exact path={"/search"} element={<Search/>} />
               <Route exact path={"/search/:stock"} element={<Fundimental/>} />
-              <Route exact path={"/home"} element={<PaginatedItems itemsPerPage={9} />} />
+              <Route exact path={"/home"} element={<Loading />} />
               <Route exact path={"/404"} element={<ErrorPage/>} />
               <Route path="*" element={<ErrorPage/>}/>
             </Routes>}
