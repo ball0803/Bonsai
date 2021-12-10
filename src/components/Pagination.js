@@ -1,19 +1,23 @@
 import React, { useEffect,ReactDOM, useState } from 'react';
 import ReactPaginate from 'react-paginate';
 import {db} from "../Firebase";
-import { doc, onSnapshot, collection, query, where, getDocs, limit, orderBy } from "firebase/firestore";
+import { doc, onSnapshot, collection, query, where, getDocs, limit, orderBy, toDate } from "firebase/firestore";
 import { async } from '@firebase/util';
-
 // Example items, to simulate fetching from another resources.
 
 function Post({ currentItems }) {
-  
+  // const dateArray = []
+  // currentItems.map((item)=>{
+  //   const d = new Date(item.date)
+  //   console.log(item.date)
+  //   dateArray.push(d)
+  // })
   
   return (
     <>
     <ul>
       {currentItems &&
-        currentItems.map((item) => (
+        currentItems.map((item, index) => (
           <li>
             {
               
@@ -22,7 +26,7 @@ function Post({ currentItems }) {
               {item.pic ? <img src={item.pic} alt="" /> : null}
               <h1 className="hearder">{item.header}</h1>
               {item.summary ? <p>{item.summary}</p> : null}
-              <time dateTime={item.date}>{Date(item.date)}</time>
+              <time dateTime={item.date}>{item.date.toDate().toDateString()}</time>
             </a>
           </li>
         ))}
