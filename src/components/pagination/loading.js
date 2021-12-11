@@ -2,9 +2,10 @@ import React, { useState, useEffect } from 'react';
 import Posts from './post';
 import Pagination from './pagination';
 import {db} from "../../Firebase";
-import { doc, onSnapshot, collection, query, where, getDocs, limit, orderBy, toDate } from "firebase/firestore";
+import { onSnapshot, collection, query, where, getDocs, limit, orderBy, toDate } from "firebase/firestore";
 import "./Pagination.css";
 import { Box } from '@mui/system';
+
 const Loading = () => {
   const [posts, setPosts] = useState([]);
   const [loading, setLoading] = useState(false);

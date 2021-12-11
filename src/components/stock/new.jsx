@@ -10,7 +10,7 @@ import { IoIosArrowForward } from "react-icons/io";
 import { Grid } from "@mui/material";
 import app from "../../Firebase";
 import {db} from "../../Firebase";
-import { onSnapshot, collection, query, where, getDocs, limit, orderBy, toDate } from "firebase/firestore";
+import { onSnapshot, collection, query, where, getDocs, limit, orderBy, toDate, get } from "firebase/firestore";
 import Posts from '../pagination/post';
 import Pagination from '../pagination/pagination';
 
@@ -34,13 +34,15 @@ function News() {
   useEffect(() => {
     const fetchPosts = async () => {
       setLoading(true);
-      const newsRef = collection(db, "News");
-      const q = query(newsRef, where('tag', 'array-contains-any', [stock]), limit(900))
-        onSnapshot(q, (snapshot)=>{
-            snapshot.docs.map((doc)=>{
-            setPosts(posts => [...posts, doc.data()])
-            })
-        })
+        const newsRef = collection(db, "News");
+        const q = query(newsRef, where('tag', 'array-contains-any', [stock]), orderBy('date', 'desc'), limit(900))
+          onSnapshot(q, (snapshot)=>{
+              snapshot.docs.map((doc)=>{
+              setPosts(posts => [...posts, doc.data()])
+              })
+          })
+
+      
       setLoading(false);
     };
 
@@ -70,7 +72,7 @@ function News() {
             /></div></Link>
           </button>
         </Typography>
-        <br/>
+        <Box className="stock-title">Recent News</Box>
         <Posts posts={currentPosts} loading={loading} />
         <Pagination
           postsPerPage={postsPerPage}
