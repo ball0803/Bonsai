@@ -20,7 +20,7 @@ import Mai from "./components/dashboard/mai";
 import ICN from "./components/stock/icn";
 import Fundimental from "./components/search/fundimental";
 import Loading from "./components/pagination/loading";
-
+import Graph from "./components/graph/graphset";
 import ErrorPage from "./components/errorPage";
 
 import News from "./components/stock/new";
@@ -61,7 +61,7 @@ function App(){
         
               <Route path={"/dashboard"} element={<Dashboard/>} />
               <Route path={"/mai"} element={<Mai/>} />
-              <Route path={"/setting"} element={<ICN/>} />
+              <Route path={"/setting"} element={<Graph/>} />
               <Route exact path={"/news/:stock"} element={<News/>} />
               <Route exact path={"/search"} element={<Search/>} />
               <Route exact path={"/search/:stock"} element={<Fundimental/>} />

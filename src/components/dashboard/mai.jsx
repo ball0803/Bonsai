@@ -23,7 +23,7 @@ function Mai(){
     return(
         <div>
              <Typography component="div" theme={theme}>
-             <Box className="kanit600">Dashboard</Box>
+             <Box className="stock-title">Dashboard</Box>
               <div className="setmai-bt">
                <Link to="/dashboard"><button className="set-bt-mai"><Box className="setmai-bt-text">SET</Box></button></Link>
                 <Link to="/mai"><button className="mai-bt-mai"><Box className="setmai-bt-text">MAI</Box></button></Link>
@@ -41,7 +41,7 @@ function Mai(){
     <div className="top10">
         <MaiTop10/>
     </div>
-    <div className="value">
+    <div className="maivalue">
     <Box className="mai-market-stat-topic-text">Investor Types & Market Stat</Box>
     <div className="mai-investor">
       <MaiInvester/>

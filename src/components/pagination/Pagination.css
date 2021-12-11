@@ -31,23 +31,29 @@
     overflow: hidden;
 }
 .page-item{
-   margin-top: 3rem;
+
 
     
 }
 .pagination{
     display: flex;
-    justify-content: center;
+    
+    overflow-x: scroll;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    width: 27%;
     
 }
 .pagination :hover{
     background-color: #59A0A4;
     color: #ffffff;
    
+   
 }
 
 .page-link{
     padding: 10px;
-    
+   
     cursor: pointer;
 }

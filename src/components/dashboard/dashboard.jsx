@@ -26,7 +26,7 @@ function Dashboard(){
   return(
         <div>
              <Typography component="div" theme={theme}>
-             <Box className="kanit600">Dashboard</Box>
+             <Box className="stock-title">Dashboard</Box>
               <div className="setmai-bt">
                <Link to="/dashboard"><button className="set-bt"><Box className="setmai-bt-text">SET</Box></button></Link>
                 <Link to="/mai"><button className="mai-bt"><Box className="setmai-bt-text">MAI</Box></button></Link>
@@ -44,7 +44,7 @@ function Dashboard(){
     <div className="top10">
         <Top10/>
     </div>
-    <div className="value">
+    <div className="setvalue">
     <Box className="market-stat-topic-text">Investor Types & Market Stat</Box>
     <div className="investor">
       <Invester/>

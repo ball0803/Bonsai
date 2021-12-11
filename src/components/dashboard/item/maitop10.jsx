@@ -14,6 +14,7 @@ import MaiEPS from './maieps';
 import MaiNetProfit from './mainetprofit';
 import MaiROE from './mairoe';
 import MaiROA from './mairoa';
+import Grid from '@mui/material/Grid';
 const theme = createTheme({
     typography: {
       fontFamily: [
@@ -27,13 +28,18 @@ function MaiTop10(){
   const [Top10, setTop10] = useState("popular");
     return(
         <div>
+          
              <Typography component="div" theme={theme}>
-            <div className="top10-select">
-                <div className="top10-set">
+             <Grid container spacing={2}>
+  <Grid item xs={3.5}>
+  <div className="top10-set">
                     <Box className="text-top10-w500">TOP 10</Box>
                     <Box className="text-set10-w500">MAI</Box>
                 </div>
-                <div>
+                
+  </Grid>
+  <Grid item xs={8.5}>
+  <div>
                 <select
         className="top-select"
         value={Top10}
@@ -57,6 +63,12 @@ function MaiTop10(){
       </select>
       
                 </div>
+  </Grid>
+ 
+</Grid>
+            <div className="top10-select">
+               
+                
             </div>
             <div className="top-compo">
             {Top10 === "popular" && <MaiPopular/>}

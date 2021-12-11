@@ -14,6 +14,8 @@ import EPS from './eps';
 import NetProfit from './netprofit';
 import ROE from './roe';
 import ROA from './roa';
+import Grid from '@mui/material/Grid';
+
 const theme = createTheme({
     typography: {
       fontFamily: [
@@ -28,12 +30,15 @@ function Top10(){
     return(
         <div>
              <Typography component="div" theme={theme}>
-            <div className="top10-select">
-                <div className="top10-set">
+             <Grid container spacing={2}>
+  <Grid item xs={3.5}>
+  <div className="top10-set">
                     <Box className="text-top10-w500">TOP 10</Box>
                     <Box className="text-set10-w500">SET</Box>
                 </div>
-                <div>
+  </Grid>
+  <Grid item xs={8.5}>
+  <div>
                 <select
         className="top-select"
         value={Top10}
@@ -57,7 +62,13 @@ function Top10(){
       </select>
       
                 </div>
-            </div>
+  </Grid>
+ 
+</Grid>
+            
+                
+              
+            
             <div className="top-compo">
             {Top10 === "popular" && <Popular/>}
             {Top10 === "gainer" && <Gainer/>}
