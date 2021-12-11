@@ -28,114 +28,293 @@ function MaiNetProfit() {
     return (
         <div>
             <Grid container>
-      <Grid item xs={3}>
+      <Grid item xs={2.5}>
       <Box className="pop-head">⁣
           หลักทรัพย์
       </Box>
             </Grid>
-            <Grid item xs={3}>
+            <Grid item xs={3.5}>
             <Box className="pop-head">Net Margin</Box>
             
             </Grid>
-            <Grid item xs={3}>
+            <Grid item xs={2.5}>
             <Box className="pop-head">ล่าสุด</Box>
             
             </Grid>
-            <Grid item xs={3}>
+            <Grid item xs={3.5}>
             <Box className="pop-head">เปลี่ยนแปลง(%)</Box>
             
             </Grid>
            
           </Grid>
-         <Grid container>
-
-            {getField("topNetProfitMargin", "1")
-              .map((info, idx) => (
-                <Grid item xs={3}>
-                  <Box className="pop-detail">{info.stringValue}</Box>
-                </Grid>
-              ))}
-          </Grid>
           <Grid container>
 
-            {getField("topNetProfitMargin", "2")
-              .map((info, idx) => (
-                <Grid item xs={3}>
-                  <Box className="pop-detail">{info.stringValue}</Box>
-                </Grid>
-              ))}
-          </Grid>
-          <Grid container>
-
-            {getField("topNetProfitMargin", "3")
-              .map((info, idx) => (
-                <Grid item xs={3}>
-                  <Box className="pop-detail">{info.stringValue}</Box>
-                </Grid>
-              ))}
-          </Grid>
-          <Grid container>
-
-            {getField("topNetProfitMargin", "4")
-              .map((info, idx) => (
-                <Grid item xs={3}>
-                  <Box className="pop-detail">{info.stringValue}</Box>
-                </Grid>
-              ))}
-          </Grid>
-          <Grid container>
-
-{getField("topNetProfitMargin", "5")
-  .map((info, idx) => (
-    <Grid item xs={3}>
-      <Box className="pop-detail">{info.stringValue}</Box>
-    </Grid>
-  ))}
+{getField("topNetProfitMargin", "1").slice(0,1)
+    .map((info, idx) => (
+      <Grid item xs={2.5}>
+        <Box className="pop-detail">{info.stringValue}</Box>
+      </Grid>
+    ))}
+    {getField("topNetProfitMargin", "1").slice(1,2)
+    .map((info, idx) => (
+      <Grid item xs={3.5}>
+        <Box className="pop-detail">{info.stringValue}</Box>
+      </Grid>
+    ))}
+    {getField("topNetProfitMargin", "1").slice(2,3)
+    .map((info, idx) => (
+      <Grid item xs={2.5}>
+        <Box className="pop-detail">{info.stringValue}</Box>
+      </Grid>
+    ))}
+    {getField("topNetProfitMargin", "1").slice(3,4)
+    .map((info, idx) => (
+      <Grid item xs={3.5}>
+        <Box className="pop-detail">{info.stringValue}</Box>
+      </Grid>
+    ))}
 </Grid>
 <Grid container>
 
-{getField("topNetProfitMargin", "6")
-  .map((info, idx) => (
-    <Grid item xs={3}>
-      <Box className="pop-detail">{info.stringValue}</Box>
-    </Grid>
-  ))}
+{getField("topNetProfitMargin", "2").slice(0,1)
+    .map((info, idx) => (
+      <Grid item xs={2.5}>
+        <Box className="pop-detail">{info.stringValue}</Box>
+      </Grid>
+    ))}
+    {getField("topNetProfitMargin", "2").slice(1,2)
+    .map((info, idx) => (
+      <Grid item xs={3.5}>
+        <Box className="pop-detail">{info.stringValue}</Box>
+      </Grid>
+    ))}
+    {getField("topNetProfitMargin", "2").slice(2,3)
+    .map((info, idx) => (
+      <Grid item xs={2.5}>
+        <Box className="pop-detail">{info.stringValue}</Box>
+      </Grid>
+    ))}
+    {getField("topNetProfitMargin", "2").slice(3,4)
+    .map((info, idx) => (
+      <Grid item xs={3.5}>
+        <Box className="pop-detail">{info.stringValue}</Box>
+      </Grid>
+    ))}
 </Grid>
 <Grid container>
 
-{getField("topNetProfitMargin", "7")
-  .map((info, idx) => (
-    <Grid item xs={3}>
-      <Box className="pop-detail">{info.stringValue}</Box>
-    </Grid>
-  ))}
+{getField("topNetProfitMargin", "3").slice(0,1)
+    .map((info, idx) => (
+      <Grid item xs={2.5}>
+        <Box className="pop-detail">{info.stringValue}</Box>
+      </Grid>
+    ))}
+    {getField("topNetProfitMargin", "3").slice(1,2)
+    .map((info, idx) => (
+      <Grid item xs={3.5}>
+        <Box className="pop-detail">{info.stringValue}</Box>
+      </Grid>
+    ))}
+    {getField("topNetProfitMargin", "3").slice(2,3)
+    .map((info, idx) => (
+      <Grid item xs={2.5}>
+        <Box className="pop-detail">{info.stringValue}</Box>
+      </Grid>
+    ))}
+    {getField("topNetProfitMargin", "3").slice(3,4)
+    .map((info, idx) => (
+      <Grid item xs={3.5}>
+        <Box className="pop-detail">{info.stringValue}</Box>
+      </Grid>
+    ))}
 </Grid>
 <Grid container>
 
-{getField("topNetProfitMargin", "8")
-  .map((info, idx) => (
-    <Grid item xs={3}>
-      <Box className="pop-detail">{info.stringValue}</Box>
-    </Grid>
-  ))}
+{getField("topNetProfitMargin", "4").slice(0,1)
+    .map((info, idx) => (
+      <Grid item xs={2.5}>
+        <Box className="pop-detail">{info.stringValue}</Box>
+      </Grid>
+    ))}
+    {getField("topNetProfitMargin", "4").slice(1,2)
+    .map((info, idx) => (
+      <Grid item xs={3.5}>
+        <Box className="pop-detail">{info.stringValue}</Box>
+      </Grid>
+    ))}
+    {getField("topNetProfitMargin", "4").slice(2,3)
+    .map((info, idx) => (
+      <Grid item xs={2.5}>
+        <Box className="pop-detail">{info.stringValue}</Box>
+      </Grid>
+    ))}
+    {getField("topNetProfitMargin", "4").slice(3,4)
+    .map((info, idx) => (
+      <Grid item xs={3.5}>
+        <Box className="pop-detail">{info.stringValue}</Box>
+      </Grid>
+    ))}
+</Grid>
+<Grid container>
+{getField("topNetProfitMargin", "5").slice(0,1)
+    .map((info, idx) => (
+      <Grid item xs={2.5}>
+        <Box className="pop-detail">{info.stringValue}</Box>
+      </Grid>
+    ))}
+    {getField("topNetProfitMargin", "5").slice(1,2)
+    .map((info, idx) => (
+      <Grid item xs={3.5}>
+        <Box className="pop-detail">{info.stringValue}</Box>
+      </Grid>
+    ))}
+    {getField("topNetProfitMargin", "5").slice(2,3)
+    .map((info, idx) => (
+      <Grid item xs={2.5}>
+        <Box className="pop-detail">{info.stringValue}</Box>
+      </Grid>
+    ))}
+    {getField("topNetProfitMargin", "5").slice(3,4)
+    .map((info, idx) => (
+      <Grid item xs={3.5}>
+        <Box className="pop-detail">{info.stringValue}</Box>
+      </Grid>
+    ))}
 </Grid>
 <Grid container>
 
-{getField("topNetProfitMargin", "9")
-  .map((info, idx) => (
-    <Grid item xs={3}>
-      <Box className="pop-detail">{info.stringValue}</Box>
-    </Grid>
-  ))}
+{getField("topNetProfitMargin", "6").slice(0,1)
+    .map((info, idx) => (
+      <Grid item xs={2.5}>
+        <Box className="pop-detail">{info.stringValue}</Box>
+      </Grid>
+    ))}
+    {getField("topNetProfitMargin", "6").slice(1,2)
+    .map((info, idx) => (
+      <Grid item xs={3.5}>
+        <Box className="pop-detail">{info.stringValue}</Box>
+      </Grid>
+    ))}
+    {getField("topNetProfitMargin", "6").slice(2,3)
+    .map((info, idx) => (
+      <Grid item xs={2.5}>
+        <Box className="pop-detail">{info.stringValue}</Box>
+      </Grid>
+    ))}
+    {getField("topNetProfitMargin", "6").slice(3,4)
+    .map((info, idx) => (
+      <Grid item xs={3.5}>
+        <Box className="pop-detail">{info.stringValue}</Box>
+      </Grid>
+    ))}
 </Grid>
 <Grid container>
 
-{getField("topNetProfitMargin", "10")
-  .map((info, idx) => (
-    <Grid item xs={3}>
-      <Box className="pop-detail">{info.stringValue}</Box>
-    </Grid>
-  ))}
+{getField("topNetProfitMargin", "7").slice(0,1)
+    .map((info, idx) => (
+      <Grid item xs={2.5}>
+        <Box className="pop-detail">{info.stringValue}</Box>
+      </Grid>
+    ))}
+    {getField("topNetProfitMargin", "7").slice(1,2)
+    .map((info, idx) => (
+      <Grid item xs={3.5}>
+        <Box className="pop-detail">{info.stringValue}</Box>
+      </Grid>
+    ))}
+    {getField("topNetProfitMargin", "7").slice(2,3)
+    .map((info, idx) => (
+      <Grid item xs={2.5}>
+        <Box className="pop-detail">{info.stringValue}</Box>
+      </Grid>
+    ))}
+    {getField("topNetProfitMargin", "7").slice(3,4)
+    .map((info, idx) => (
+      <Grid item xs={3.5}>
+        <Box className="pop-detail">{info.stringValue}</Box>
+      </Grid>
+    ))}
+</Grid>
+<Grid container>
+
+{getField("topNetProfitMargin", "8").slice(0,1)
+    .map((info, idx) => (
+      <Grid item xs={2.5}>
+        <Box className="pop-detail">{info.stringValue}</Box>
+      </Grid>
+    ))}
+    {getField("topNetProfitMargin", "8").slice(1,2)
+    .map((info, idx) => (
+      <Grid item xs={3.5}>
+        <Box className="pop-detail">{info.stringValue}</Box>
+      </Grid>
+    ))}
+    {getField("topNetProfitMargin", "8").slice(2,3)
+    .map((info, idx) => (
+      <Grid item xs={2.5}>
+        <Box className="pop-detail">{info.stringValue}</Box>
+      </Grid>
+    ))}
+    {getField("topNetProfitMargin", "8").slice(3,4)
+    .map((info, idx) => (
+      <Grid item xs={3.5}>
+        <Box className="pop-detail">{info.stringValue}</Box>
+      </Grid>
+    ))}
+</Grid>
+<Grid container>
+
+{getField("topNetProfitMargin", "9").slice(0,1)
+    .map((info, idx) => (
+      <Grid item xs={2.5}>
+        <Box className="pop-detail">{info.stringValue}</Box>
+      </Grid>
+    ))}
+    {getField("topNetProfitMargin", "9").slice(1,2)
+    .map((info, idx) => (
+      <Grid item xs={3.5}>
+        <Box className="pop-detail">{info.stringValue}</Box>
+      </Grid>
+    ))}
+    {getField("topNetProfitMargin", "9").slice(2,3)
+    .map((info, idx) => (
+      <Grid item xs={2.5}>
+        <Box className="pop-detail">{info.stringValue}</Box>
+      </Grid>
+    ))}
+    {getField("topNetProfitMargin", "9").slice(3,4)
+    .map((info, idx) => (
+      <Grid item xs={3.5}>
+        <Box className="pop-detail">{info.stringValue}</Box>
+      </Grid>
+    ))}
+</Grid>
+<Grid container>
+
+{getField("topNetProfitMargin", "10").slice(0,1)
+    .map((info, idx) => (
+      <Grid item xs={2.5}>
+        <Box className="pop-detail">{info.stringValue}</Box>
+      </Grid>
+    ))}
+    {getField("topNetProfitMargin", "10").slice(1,2)
+    .map((info, idx) => (
+      <Grid item xs={3.5}>
+        <Box className="pop-detail">{info.stringValue}</Box>
+      </Grid>
+    ))}
+    {getField("topNetProfitMargin", "10").slice(2,3)
+    .map((info, idx) => (
+      <Grid item xs={2.5}>
+        <Box className="pop-detail">{info.stringValue}</Box>
+      </Grid>
+    ))}
+    {getField("topNetProfitMargin", "10").slice(3,4)
+    .map((info, idx) => (
+      <Grid item xs={3.5}>
+        <Box className="pop-detail">{info.stringValue}</Box>
+      </Grid>
+    ))}
 </Grid>
           
         </div>

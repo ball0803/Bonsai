@@ -21,7 +21,7 @@ export const menuItems = [
   {
     name: "Home",
     exact: true,
-    to: "/home",
+    to: "/",
     iconClassName: "bi bi-house-door-fill",
   },
   {
@@ -38,11 +38,18 @@ export const menuItems = [
     iconClassName: "bi bi-bar-chart-fill",
   },
   {
-    name: "Setting",
+    name: "Tutorial",
     exact: true,
     to: "/setting",
-    iconClassName: "bi bi-gear-fill",
+    iconClassName: "bi bi-question-lg",
   },
+  {
+    name: "About",
+    exact: true,
+    to: "/about",
+    iconClassName: "bi bi-journal-text",
+  },
+  
   
 ];
 

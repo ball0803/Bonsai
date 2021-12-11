@@ -28,114 +28,292 @@ function MaiDividend() {
     return (
         <div>
             <Grid container>
-      <Grid item xs={3}>
+      <Grid item xs={2.5}>
       <Box className="pop-head">⁣
           หลักทรัพย์
       </Box>
             </Grid>
-            <Grid item xs={3}>
+            <Grid item xs={3.5}>
             <Box className="pop-head">Dividend Yield</Box>
             
             </Grid>
-            <Grid item xs={3}>
+            <Grid item xs={2.5}>
             <Box className="pop-head">ล่าสุด</Box>
             
             </Grid>
-            <Grid item xs={3}>
+            <Grid item xs={3.5}>
             <Box className="pop-head">เปลี่ยนแปลง(%)</Box>
             
             </Grid>
            
           </Grid>
           <Grid container>
-
-            {getField("topDivideYield", "1")
-              .map((info, idx) => (
-                <Grid item xs={3}>
-                  <Box className="pop-detail">{info.stringValue}</Box>
-                </Grid>
-              ))}
-          </Grid>
-          <Grid container>
-
-            {getField("topDivideYield", "2")
-              .map((info, idx) => (
-                <Grid item xs={3}>
-                  <Box className="pop-detail">{info.stringValue}</Box>
-                </Grid>
-              ))}
-          </Grid>
-          <Grid container>
-
-            {getField("topDivideYield", "3")
-              .map((info, idx) => (
-                <Grid item xs={3}>
-                  <Box className="pop-detail">{info.stringValue}</Box>
-                </Grid>
-              ))}
-          </Grid>
-          <Grid container>
-
-            {getField("topDivideYield", "4")
-              .map((info, idx) => (
-                <Grid item xs={3}>
-                  <Box className="pop-detail">{info.stringValue}</Box>
-                </Grid>
-              ))}
-          </Grid>
-          <Grid container>
-
-{getField("topDivideYield", "5")
-  .map((info, idx) => (
-    <Grid item xs={3}>
-      <Box className="pop-detail">{info.stringValue}</Box>
-    </Grid>
-  ))}
+          {getField("topDivideYield", "1").slice(0,1)
+    .map((info, idx) => (
+      <Grid item xs={2.5}>
+        <Box className="pop-detail">{info.stringValue}</Box>
+      </Grid>
+    ))}
+    {getField("topDivideYield", "1").slice(1,2)
+    .map((info, idx) => (
+      <Grid item xs={3.5}>
+        <Box className="pop-detail">{info.stringValue}</Box>
+      </Grid>
+    ))}
+    {getField("topDivideYield", "1").slice(2,3)
+    .map((info, idx) => (
+      <Grid item xs={2.5}>
+        <Box className="pop-detail">{info.stringValue}</Box>
+      </Grid>
+    ))}
+    {getField("topDivideYield", "1").slice(3,4)
+    .map((info, idx) => (
+      <Grid item xs={3.5}>
+        <Box className="pop-detail">{info.stringValue}</Box>
+      </Grid>
+    ))}
 </Grid>
 <Grid container>
 
-{getField("topDivideYield", "6")
-  .map((info, idx) => (
-    <Grid item xs={3}>
-      <Box className="pop-detail">{info.stringValue}</Box>
-    </Grid>
-  ))}
+{getField("topDivideYield", "2").slice(0,1)
+    .map((info, idx) => (
+      <Grid item xs={2.5}>
+        <Box className="pop-detail">{info.stringValue}</Box>
+      </Grid>
+    ))}
+    {getField("topDivideYield", "2").slice(1,2)
+    .map((info, idx) => (
+      <Grid item xs={3.5}>
+        <Box className="pop-detail">{info.stringValue}</Box>
+      </Grid>
+    ))}
+    {getField("topDivideYield", "2").slice(2,3)
+    .map((info, idx) => (
+      <Grid item xs={2.5}>
+        <Box className="pop-detail">{info.stringValue}</Box>
+      </Grid>
+    ))}
+    {getField("topDivideYield", "2").slice(3,4)
+    .map((info, idx) => (
+      <Grid item xs={3.5}>
+        <Box className="pop-detail">{info.stringValue}</Box>
+      </Grid>
+    ))}
 </Grid>
 <Grid container>
 
-{getField("topDivideYield", "7")
-  .map((info, idx) => (
-    <Grid item xs={3}>
-      <Box className="pop-detail">{info.stringValue}</Box>
-    </Grid>
-  ))}
+{getField("topDivideYield", "3").slice(0,1)
+    .map((info, idx) => (
+      <Grid item xs={2.5}>
+        <Box className="pop-detail">{info.stringValue}</Box>
+      </Grid>
+    ))}
+    {getField("topDivideYield", "3").slice(1,2)
+    .map((info, idx) => (
+      <Grid item xs={3.5}>
+        <Box className="pop-detail">{info.stringValue}</Box>
+      </Grid>
+    ))}
+    {getField("topDivideYield", "3").slice(2,3)
+    .map((info, idx) => (
+      <Grid item xs={2.5}>
+        <Box className="pop-detail">{info.stringValue}</Box>
+      </Grid>
+    ))}
+    {getField("topDivideYield", "3").slice(3,4)
+    .map((info, idx) => (
+      <Grid item xs={3.5}>
+        <Box className="pop-detail">{info.stringValue}</Box>
+      </Grid>
+    ))}
 </Grid>
 <Grid container>
 
-{getField("topDivideYield", "8")
-  .map((info, idx) => (
-    <Grid item xs={3}>
-      <Box className="pop-detail">{info.stringValue}</Box>
-    </Grid>
-  ))}
+{getField("topDivideYield", "4").slice(0,1)
+    .map((info, idx) => (
+      <Grid item xs={2.5}>
+        <Box className="pop-detail">{info.stringValue}</Box>
+      </Grid>
+    ))}
+    {getField("topDivideYield", "4").slice(1,2)
+    .map((info, idx) => (
+      <Grid item xs={3.5}>
+        <Box className="pop-detail">{info.stringValue}</Box>
+      </Grid>
+    ))}
+    {getField("topDivideYield", "4").slice(2,3)
+    .map((info, idx) => (
+      <Grid item xs={2.5}>
+        <Box className="pop-detail">{info.stringValue}</Box>
+      </Grid>
+    ))}
+    {getField("topDivideYield", "4").slice(3,4)
+    .map((info, idx) => (
+      <Grid item xs={3.5}>
+        <Box className="pop-detail">{info.stringValue}</Box>
+      </Grid>
+    ))}
+</Grid>
+<Grid container>
+{getField("topDivideYield", "5").slice(0,1)
+    .map((info, idx) => (
+      <Grid item xs={2.5}>
+        <Box className="pop-detail">{info.stringValue}</Box>
+      </Grid>
+    ))}
+    {getField("topDivideYield", "5").slice(1,2)
+    .map((info, idx) => (
+      <Grid item xs={3.5}>
+        <Box className="pop-detail">{info.stringValue}</Box>
+      </Grid>
+    ))}
+    {getField("topDivideYield", "5").slice(2,3)
+    .map((info, idx) => (
+      <Grid item xs={2.5}>
+        <Box className="pop-detail">{info.stringValue}</Box>
+      </Grid>
+    ))}
+    {getField("topDivideYield", "5").slice(3,4)
+    .map((info, idx) => (
+      <Grid item xs={3.5}>
+        <Box className="pop-detail">{info.stringValue}</Box>
+      </Grid>
+    ))}
 </Grid>
 <Grid container>
 
-{getField("topDivideYield", "9")
-  .map((info, idx) => (
-    <Grid item xs={3}>
-      <Box className="pop-detail">{info.stringValue}</Box>
-    </Grid>
-  ))}
+{getField("topDivideYield", "6").slice(0,1)
+    .map((info, idx) => (
+      <Grid item xs={2.5}>
+        <Box className="pop-detail">{info.stringValue}</Box>
+      </Grid>
+    ))}
+    {getField("topDivideYield", "6").slice(1,2)
+    .map((info, idx) => (
+      <Grid item xs={3.5}>
+        <Box className="pop-detail">{info.stringValue}</Box>
+      </Grid>
+    ))}
+    {getField("topDivideYield", "6").slice(2,3)
+    .map((info, idx) => (
+      <Grid item xs={2.5}>
+        <Box className="pop-detail">{info.stringValue}</Box>
+      </Grid>
+    ))}
+    {getField("topDivideYield", "6").slice(3,4)
+    .map((info, idx) => (
+      <Grid item xs={3.5}>
+        <Box className="pop-detail">{info.stringValue}</Box>
+      </Grid>
+    ))}
 </Grid>
 <Grid container>
 
-{getField("topDivideYield", "10")
-  .map((info, idx) => (
-    <Grid item xs={3}>
-      <Box className="pop-detail">{info.stringValue}</Box>
-    </Grid>
-  ))}
+{getField("topDivideYield", "7").slice(0,1)
+    .map((info, idx) => (
+      <Grid item xs={2.5}>
+        <Box className="pop-detail">{info.stringValue}</Box>
+      </Grid>
+    ))}
+    {getField("topDivideYield", "7").slice(1,2)
+    .map((info, idx) => (
+      <Grid item xs={3.5}>
+        <Box className="pop-detail">{info.stringValue}</Box>
+      </Grid>
+    ))}
+    {getField("topDivideYield", "7").slice(2,3)
+    .map((info, idx) => (
+      <Grid item xs={2.5}>
+        <Box className="pop-detail">{info.stringValue}</Box>
+      </Grid>
+    ))}
+    {getField("topDivideYield", "7").slice(3,4)
+    .map((info, idx) => (
+      <Grid item xs={3.5}>
+        <Box className="pop-detail">{info.stringValue}</Box>
+      </Grid>
+    ))}
+</Grid>
+<Grid container>
+
+{getField("topDivideYield", "8").slice(0,1)
+    .map((info, idx) => (
+      <Grid item xs={2.5}>
+        <Box className="pop-detail">{info.stringValue}</Box>
+      </Grid>
+    ))}
+    {getField("topDivideYield", "8").slice(1,2)
+    .map((info, idx) => (
+      <Grid item xs={3.5}>
+        <Box className="pop-detail">{info.stringValue}</Box>
+      </Grid>
+    ))}
+    {getField("topDivideYield", "8").slice(2,3)
+    .map((info, idx) => (
+      <Grid item xs={2.5}>
+        <Box className="pop-detail">{info.stringValue}</Box>
+      </Grid>
+    ))}
+    {getField("topDivideYield", "8").slice(3,4)
+    .map((info, idx) => (
+      <Grid item xs={3.5}>
+        <Box className="pop-detail">{info.stringValue}</Box>
+      </Grid>
+    ))}
+</Grid>
+<Grid container>
+
+{getField("topDivideYield", "9").slice(0,1)
+    .map((info, idx) => (
+      <Grid item xs={2.5}>
+        <Box className="pop-detail">{info.stringValue}</Box>
+      </Grid>
+    ))}
+    {getField("topDivideYield", "9").slice(1,2)
+    .map((info, idx) => (
+      <Grid item xs={3.5}>
+        <Box className="pop-detail">{info.stringValue}</Box>
+      </Grid>
+    ))}
+    {getField("topDivideYield", "9").slice(2,3)
+    .map((info, idx) => (
+      <Grid item xs={2.5}>
+        <Box className="pop-detail">{info.stringValue}</Box>
+      </Grid>
+    ))}
+    {getField("topDivideYield", "9").slice(3,4)
+    .map((info, idx) => (
+      <Grid item xs={3.5}>
+        <Box className="pop-detail">{info.stringValue}</Box>
+      </Grid>
+    ))}
+</Grid>
+<Grid container>
+
+{getField("topDivideYield", "10").slice(0,1)
+    .map((info, idx) => (
+      <Grid item xs={2.5}>
+        <Box className="pop-detail">{info.stringValue}</Box>
+      </Grid>
+    ))}
+    {getField("topDivideYield", "10").slice(1,2)
+    .map((info, idx) => (
+      <Grid item xs={3.5}>
+        <Box className="pop-detail">{info.stringValue}</Box>
+      </Grid>
+    ))}
+    {getField("topDivideYield", "10").slice(2,3)
+    .map((info, idx) => (
+      <Grid item xs={2.5}>
+        <Box className="pop-detail">{info.stringValue}</Box>
+      </Grid>
+    ))}
+    {getField("topDivideYield", "10").slice(3,4)
+    .map((info, idx) => (
+      <Grid item xs={3.5}>
+        <Box className="pop-detail">{info.stringValue}</Box>
+      </Grid>
+    ))}
 </Grid>
           
         </div>

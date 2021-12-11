@@ -1,9 +1,13 @@
 import React from 'react';
 import ReactApexChart from 'react-apexcharts';
-
-
+import { useState,useEffect } from 'react';
+import { Box } from '@mui/system';
 function Graph(){
-    const graphdata = {
+  const [userData, setUserdata] = useState(false);
+
+ 
+
+  const graphdata = {
           
         series: [{
           data: [{
@@ -251,7 +255,8 @@ function Graph(){
         options: {
           chart: {
             type: 'candlestick',
-            height: 350
+            height: 350,
+            widht: 350
           },
           title: {
             text: 'CandleStick Chart',
@@ -274,9 +279,9 @@ function Graph(){
 
     return (
         <div>
+      <Box className="stock-title">Tutorial</Box>
       
-      
-  <ReactApexChart options={graphdata.options} series={graphdata.series} type="candlestick" height={350} />
+  <ReactApexChart options={graphdata.options} series={graphdata.series} type="candlestick" height={350} width={350}/>
 </div>
       
     );

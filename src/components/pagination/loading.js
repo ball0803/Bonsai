@@ -16,7 +16,7 @@ const Loading = () => {
     const fetchPosts = async () => {
       setLoading(true);
       const newsRef = collection(db, "News");
-      const q = query(newsRef, orderBy('date', 'desc'), limit(90))
+      const q = query(newsRef, orderBy('date', 'desc'), limit(180))
         onSnapshot(q, (snapshot)=>{
             snapshot.docs.map((doc)=>{
             setPosts(posts => [...posts, doc.data()])
@@ -39,6 +39,7 @@ const Loading = () => {
   return (
     <>
     <Box className="stock-title">Recent News</Box>
+    <br/>
       <Posts posts={currentPosts} loading={loading} />
       <Pagination
         postsPerPage={postsPerPage}

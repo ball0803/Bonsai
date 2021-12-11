@@ -72,7 +72,7 @@ function News() {
             /></div></Link>
           </button>
         </Typography>
-        <Box className="stock-title">Recent News</Box>
+       <br/>
         <Posts posts={currentPosts} loading={loading} />
         <Pagination
           postsPerPage={postsPerPage}

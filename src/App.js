@@ -26,6 +26,8 @@ import ErrorPage from "./components/errorPage";
 import News from "./components/stock/new";
 import Search from "./components/search/searchs";
 
+import About from "./components/about/about";
+
 function App(){
   const [inactive, setInactive] = useState(false);
 
@@ -57,7 +59,7 @@ function App(){
           ))}
 
           {<Routes>
-              <Route exact path={"/"} element={<Welcome/>} />
+              <Route exact path={"/"} element={<Loading/>} />
         
               <Route path={"/dashboard"} element={<Dashboard/>} />
               <Route path={"/mai"} element={<Mai/>} />
@@ -65,7 +67,8 @@ function App(){
               <Route exact path={"/news/:stock"} element={<News/>} />
               <Route exact path={"/search"} element={<Search/>} />
               <Route exact path={"/search/:stock"} element={<Fundimental/>} />
-              <Route exact path={"/home"} element={<Loading />} />
+              
+              <Route exact path={"/about"} element={<About/>} />
               <Route exact path={"/404"} element={<ErrorPage/>} />
               <Route path="*" element={<ErrorPage/>}/>
             </Routes>}
