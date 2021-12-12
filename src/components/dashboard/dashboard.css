@@ -11,12 +11,18 @@
     width: 5.5rem;
     height: 3rem;
     cursor: pointer;
+    animation: fadeInAnimation ease 1.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
 .setmai-bt{
     display: flex;
     gap: 0.5rem;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
+    animation: fadeInAnimation ease 1.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
 .mai-bt{
     background: #F0F0F0;
@@ -26,6 +32,9 @@
     width: 5.5rem;
     height: 3rem;
     cursor: pointer;
+    animation: fadeInAnimation ease 1.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 
 }
 .market{
@@ -33,7 +42,10 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 30px;
     max-width: 800px;
-    max-height: 1200px;
+    max-height: 1174px;
+    animation: fadeInAnimation ease 1.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
     
 }
 
@@ -45,6 +57,9 @@
     max-height: 515px;
     margin-top: 1rem;
     padding: 1.5rem;
+    animation: fadeInAnimation ease 1.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 
 }
 .setvalue{
@@ -55,6 +70,9 @@
     max-height: 540px;
     margin-top: 48px;
     padding: 1.5rem;
+    animation: fadeInAnimation ease 1.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
 
 .market-bts{
@@ -65,6 +83,9 @@
     height: 50px;
 
     margin-bottom: 0.5rem;
+    animation: fadeInAnimation ease 1.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 
 }
 
@@ -83,6 +104,7 @@
     color: #000000;
 
     cursor: pointer;
+    
 }
 
 .market-bt:focus{
@@ -100,12 +122,18 @@
     border-radius: 45px;
     width:10rem;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    animation: fadeInAnimation ease 1.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
 .market-over-topic{
     padding-left: 2rem;
     padding-top: 1rem;
     display: flex;
     justify-items: center;
+    animation: fadeInAnimation ease 1.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
 .market-stat-topic-text{
     font-size: 1.25rem;
@@ -118,4 +146,7 @@
     border-radius: 45px;
     width:17rem;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    animation: fadeInAnimation ease 1.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }

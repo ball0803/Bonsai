@@ -30,7 +30,7 @@ function Invester() {
             <Grid container>
       <Grid item xs={3}>
       <Box className="pop-head">⁣
-      Investor Type
+      Type
       </Box>
             </Grid>
             <Grid item xs={3}>

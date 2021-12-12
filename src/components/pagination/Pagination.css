@@ -1,5 +1,5 @@
 .hearder{
-    color: black;
+    color: white;
     font-size: 20px;
     font-weight: 500;
     line-height: 22px ;
@@ -9,30 +9,35 @@
 .link-newbox{
     text-decoration: none;
 }
+
 .summary{
-    font-size: 12px;
-    font-weight: 500;
-    color: black;
+    font-size: 1rem;
+    font-weight: 300;
+    color: white;
 
     padding: 0 1rem 0.5rem 1rem;
 }
 .date{
     font-size: 0.75rem;
     font-weight: 500;
-    color: #757575;
+    color: #f5f5f5;
     padding: 0 0 1rem 1rem;
 
 }
+
+
 .new-box{
-    background: #d8e4e4;
+    background: linear-gradient(180deg, #1A4749 0%, #316D71 43.75%, #398084 77.08%, #77ADA4 100%);
     border-radius: 30px;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.25));
     min-height: 100%;
     overflow: hidden;
+    animation: fadeInAnimation ease 1.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
+
 .page-item{
-
-
     
 }
 .pagination{
@@ -42,14 +47,16 @@
     margin-top: 3rem;
     margin-bottom: 1rem;
     padding-bottom: 1rem;
-    width: 27%;
+    width: 29%;
     
 }
 .pagination :hover{
     background-color: #59A0A4;
-    color: #ffffff;
-   
-   
+    color: #ffffff
+}
+.center-page{
+    display: flex;
+    justify-content: center;
 }
 
 .page-link{
@@ -57,3 +64,24 @@
    
     cursor: pointer;
 }
+
+.main_div {
+   
+    position: relative;
+  }
+  
+  .main_div .overlay_div {
+    
+   
+    
+    
+    transition: all 0.2s ease-out;
+  }
+  
+  .main_div:hover .overlay_div {
+    visibility: visible;
+    opacity: 1;
+    transition: all 0.2s ease-in;
+    filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.7));
+    
+  }

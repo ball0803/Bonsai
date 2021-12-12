@@ -38,7 +38,10 @@ const Loading = () => {
 
   return (
     <>
-    <Box className="stock-title">Recent News</Box>
+    <div className='title-box'>
+      <Box className="head-title">Recent News</Box>
+      </div>
+      
     <br/>
       <Posts posts={currentPosts} loading={loading} />
       <Pagination

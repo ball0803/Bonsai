@@ -27,6 +27,7 @@ import News from "./components/stock/new";
 import Search from "./components/search/searchs";
 
 import About from "./components/about/about";
+import Tutorial from "./components/tutorial/tutorial";
 
 function App(){
   const [inactive, setInactive] = useState(false);
@@ -63,7 +64,7 @@ function App(){
         
               <Route path={"/dashboard"} element={<Dashboard/>} />
               <Route path={"/mai"} element={<Mai/>} />
-              <Route path={"/setting"} element={<Graph/>} />
+              <Route path={"/tutorial"} element={<Tutorial/>} />
               <Route exact path={"/news/:stock"} element={<News/>} />
               <Route exact path={"/search"} element={<Search/>} />
               <Route exact path={"/search/:stock"} element={<Fundimental/>} />

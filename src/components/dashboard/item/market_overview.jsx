@@ -39,18 +39,7 @@ function MarketOverview(){
             <Typography component="div" theme={theme}>
             <div className="select-index">
             <SelectGraph/>
-            {getField("SET Table", "SET").slice(0,1)
-              .map((info, idx) => (
-                
-                  <Box className="index-number">{info.stringValue}</Box>
-                
-              ))}
-              {getField("SET Table", "SET").slice(1,2)
-              .map((info, idx) => (
-                
-                  <Box className="change-index-number">({info.stringValue})</Box>
-                
-              ))}
+           
         </div>
             
         <div className="lastchange-compo">

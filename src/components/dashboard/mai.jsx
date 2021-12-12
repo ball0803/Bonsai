@@ -23,7 +23,9 @@ function Mai(){
     return(
         <div>
              <Typography component="div" theme={theme}>
-             <Box className="stock-title">Dashboard</Box>
+             <div className='title-box'>
+      <Box className="head-title">Dashboard</Box>
+      </div>
               <div className="setmai-bt">
                <Link to="/dashboard"><button className="set-bt-mai"><Box className="setmai-bt-text">SET</Box></button></Link>
                 <Link to="/mai"><button className="mai-bt-mai"><Box className="setmai-bt-text">MAI</Box></button></Link>

@@ -6,6 +6,7 @@ import { Typography,Box,createTheme } from '@mui/material';
 import { useState } from 'react';
 import { useEffect } from 'react';
 import MaiLastchange from './mai-lastchange';
+import GraphMAI from '../../graph/graphmai';
 
 const theme = createTheme({
     typography: {
@@ -41,20 +42,11 @@ function MaiOverview(){
             <Box className="mai-topic">
                 MAI
             </Box>
-            {getField("mai Table", "mai").slice(0,1)
-              .map((info, idx) => (
-                
-                  <Box className="index-number">{info.stringValue}</Box>
-                
-              ))}
-              {getField("mai Table", "mai").slice(1,2)
-              .map((info, idx) => (
-                
-                  <Box className="change-index-number">({info.stringValue})</Box>
-                
-              ))}
-        </div>
             
+        </div>
+        <div className="graph-compo">
+              <GraphMAI/>
+            </div>
         <div className="lastchange-compo">
             <MaiLastchange/>
         </div>

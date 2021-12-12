@@ -40,15 +40,10 @@ export const menuItems = [
   {
     name: "Tutorial",
     exact: true,
-    to: "/setting",
+    to: "/tutorial",
     iconClassName: "bi bi-question-lg",
   },
-  {
-    name: "About",
-    exact: true,
-    to: "/about",
-    iconClassName: "bi bi-journal-text",
-  },
+  
   
   
 ];

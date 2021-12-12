@@ -3,11 +3,11 @@ import ReactApexChart from 'react-apexcharts';
 import { useState,useEffect } from 'react';
 import { Box } from '@mui/system';
 import axios from 'axios';
-function GraphSet(){
+function GraphSetHD(){
   const [userData, setUserdata] = useState(false);
   const [Data, setData] = useState([])
   useEffect(() => {
-    axios.get("https://bonsai-finan-api.herokuapp.com/ticker=%5ESET.BK&period=5d&interval=15m").then((res)=>{
+    axios.get("https://bonsai-finan-api.herokuapp.com/ticker=%5ESETHD.BK&period=5d&interval=15m").then((res)=>{
       res.data.result.map((data)=>{
         // console.log(data.Date)
         setData(Data => [...Data, [data.Date, data.Open.toFixed(2), data.High.toFixed(2), data.Low.toFixed(2), data.Close.toFixed(2)]])
@@ -47,4 +47,4 @@ function GraphSet(){
     );
   
 }
-export default GraphSet;
+export default GraphSetHD;

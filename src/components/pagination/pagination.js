@@ -9,7 +9,7 @@ const Pagination = ({ postsPerPage, totalPosts, paginate }) => {
   }
 
   return (
-    <nav>
+    <nav className="center-page">
       <div className='pagination'>
         {pageNumbers.map(number => (
           <Box key={number} className='page-item'>

@@ -15,6 +15,11 @@ li{
 body{
     background-color: #fff;
     font-family: 'Kanit';
+    animation: fadeInAnimation ease 1.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    zoom: 0.9;
+   
 }
 
 .side-menu{
@@ -23,7 +28,7 @@ body{
     width: 250px;
     height: 100%;
     box-sizing: border-box;
-    padding: 30px 0px 30px 25px;
+    padding: 30px 20px 30px 20px;
 }
 
 .side-menu .logo{
@@ -44,6 +49,8 @@ body{
 }
 
 .side-menu .main-menu .menu-item{
+    background: rgb(134, 183, 185);
+    border-radius: 30px;
     color: #fff;
     text-decoration: none;
     font-size: 18px;
@@ -55,7 +62,7 @@ body{
 
 .side-menu .main-menu .menu-item.active{
     background: #fff;
-    border-radius: 25px 0px 0px 25px;
+    border-radius: 30px;
     color: #000;
 }
 
@@ -98,7 +105,7 @@ body{
 .container{
     margin-left: 250px;
     transition: margin-left .2s ease-in;
-    padding: 50px;
+    padding: 0 50px 50px 50px ;
     box-sizing: border-box;
 }
 .top-section{
@@ -143,3 +150,12 @@ body{
   ::-webkit-scrollbar-thumb:hover {
     background: #59A0A4;
   }
+
+  @keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}

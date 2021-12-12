@@ -48,6 +48,7 @@ function Icn() {
   return (
     <div>
       <Typography component="div" theme={theme}>
+        
         <Box className="stock-title">ICN</Box>
         <button className="link-new"><Link className="linkto-new" to="/news">
           <div className="overlink-new">&nbsp;&nbsp;&nbsp;&nbsp;

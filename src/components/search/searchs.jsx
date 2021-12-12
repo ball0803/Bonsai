@@ -36,7 +36,7 @@ function Search() {
     setLanguage(input);
     const upper = input.toUpperCase();
     if (stockList.includes(upper)){
-      navigate(`/search/${upper}`);
+      navigate(`/news/${upper}`);
     }else{
       navigate('/404');
     }
@@ -57,11 +57,11 @@ function Search() {
   }
 
   return (
-    <div>
+    <div className='fade-search'>
       <Typography component="div" theme={theme}>
         <div className="firstpage-search">
           <div className="logo">
-            <img src="./asset/Logo.svg" width="13%"/>
+            <img src="./asset/Logo.svg" width="15%"/>
               <Box className="logo-text">Bonsai</Box>
           </div>
           <div className="searchbar">
@@ -90,7 +90,7 @@ function Search() {
                   return val
                 }
               }).map((data)=>{
-                return <Link class="alink" to={`/search/${data}`}><div className="suggest-detail" ><li>{data}</li></div></Link>
+                return <Link class="alink" to={`/news/${data}`}><div className="suggest-detail" ><li>{data}</li></div></Link>
               })
             }
             </ul>}
