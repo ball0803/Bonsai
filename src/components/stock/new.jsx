@@ -59,7 +59,9 @@ function News() {
   return (
       <div>
         <Typography component="div" theme={theme}>
-          <Box className="stock-title">{stock}</Box>
+        <div className='stock-box'>
+        <Box className="stock-title">{stock}</Box>
+        </div>
           <button className="link-fundamental"><Link className="linkto-new" to={`/search/${stock}`}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <div className="overlink">
             <FaRegNewspaper className="link-logo" />

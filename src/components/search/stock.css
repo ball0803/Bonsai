@@ -11,10 +11,18 @@
     padding: 10px 0 15px 40px;
 }
 
+.stock-box{
+    background: linear-gradient(89.84deg, #B1CCC9 0.14%, #DAE8E6 45.33%, #FFFFFF 83.76%);
+    border-radius: 0 0 30px 30px;
+    margin-bottom: 20px;
+}
+
 .stock-title{
     font-weight: 600;
     font-size: 3rem;
+    padding: 10px 0 15px 40px;
 }
+
 .fade-search{
     animation: fadeInAnimation ease 1.5s;
     animation-iteration-count: 1;
@@ -148,8 +156,9 @@
     height: 46px;
     text-transform:uppercase;
     padding: 0 200px 0 36px;
-    background: #fff;
+    background: rgb(255, 255, 255);
     border-radius: 30px 30px 30px 30px;
+    filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.25));
     outline: none;
     font-family: "Kanit";
     font-size: 1rem;
@@ -157,6 +166,7 @@
     text-overflow: ellipsis;
     line-height: 36px;
     -webkit-appearance: none;
+    border : none;
 }
 .search-button{
     font-size: 1rem;
@@ -184,13 +194,13 @@
    
     align-items: center;
 }
+
+
 .suggest-detail{
+    background: #d3ecc0;
     padding-top: 0.42rem;
     padding-bottom: 0.44rem;
-    border-bottom: solid 2px black;
-    border-right: solid 2px black;
-    border-left: solid 2px black;
-    width: 24rem;
+    width: 25rem;
     margin-left: 2.8rem;
     justify-content: center;
     display: flex;
@@ -203,8 +213,8 @@
 
 .alink :hover{
     text-decoration: none;
-    background-color: #f3f3f3;
-    color:#59A0A4;
+    background-color: #76c086;
+    color:#ffffff;
 }
 .fundi-graph{
     margin-top: 2rem;

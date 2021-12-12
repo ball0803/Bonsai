@@ -59,8 +59,9 @@ function Fundimental() {
   return (
     <div className='fadedi'>
       <Typography component="div" theme={theme}>
-      
+      <div className='stock-box'>
         <Box className="stock-title">{stock}</Box>
+        </div>
         <button className="link-new"><Link className="linkto-new" to={`/news/${stock}`}>
           <div className="overlink-new">&nbsp;&nbsp;&nbsp;&nbsp;
           <FaRegNewspaper className="link-logo" />
