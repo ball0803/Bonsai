@@ -49,96 +49,144 @@ function Lastchange() {
               <Box className="index-change-topic">SET</Box>
             </Grid>
 
-            {getField("SET Table", "SET")
-              .map((info, idx) => (
-                <Grid item xs={4}>
-                  <Box className="index-change-detail">{info.stringValue}</Box>
-                </Grid>
-              ))}
+            {getField("SET Table", "SET")[1].stringValue[0] == "+" ?
+                getField("SET Table", "SET").map((info, idx) => (
+                  <Grid item xs={4}>
+                    <Box className="index-change-detail" style={{color: "green"}}>{info.stringValue}</Box>
+                  </Grid>
+                )):
+                getField("SET Table", "SET").map((info, idx) => (
+                  <Grid item xs={4}>
+                    <Box className="index-change-detail" style={{color: "red"}}>{info.stringValue}</Box>
+                  </Grid>
+                ))
+              }
           </Grid>
           <Grid container>
             <Grid item xs={4}>
               <Box className="index-change-topic">SET50</Box>
             </Grid>
 
-            {getField("SET Table", "SET50")
-              .map((info, idx) => (
-                <Grid item xs={4}>
-                  <Box className="index-change-detail">{info.stringValue}</Box>
-                </Grid>
-              ))}
+            {getField("SET Table", "SET50")[1].stringValue[0] == "+" ?
+                getField("SET Table", "SET50").map((info, idx) => (
+                  <Grid item xs={4}>
+                    <Box className="index-change-detail" style={{color: "green"}}>{info.stringValue}</Box>
+                  </Grid>
+                )):
+                getField("SET Table", "SET50").map((info, idx) => (
+                  <Grid item xs={4}>
+                    <Box className="index-change-detail" style={{color: "red"}}>{info.stringValue}</Box>
+                  </Grid>
+                ))
+              }
           </Grid>
           <Grid container>
             <Grid item xs={4}>
               <Box className="index-change-topic">SET100</Box>
             </Grid>
 
-            {getField("SET Table", "SET100")
-              .map((info, idx) => (
-                <Grid item xs={4}>
-                  <Box className="index-change-detail">{info.stringValue}</Box>
-                </Grid>
-              ))}
+            {getField("SET Table", "SET100")[1].stringValue[0] == "+" ?
+                getField("SET Table", "SET100").map((info, idx) => (
+                  <Grid item xs={4}>
+                    <Box className="index-change-detail" style={{color: "green"}}>{info.stringValue}</Box>
+                  </Grid>
+                )):
+                getField("SET Table", "SET100").map((info, idx) => (
+                  <Grid item xs={4}>
+                    <Box className="index-change-detail" style={{color: "red"}}>{info.stringValue}</Box>
+                  </Grid>
+                ))
+              }
           </Grid>
           <Grid container>
             <Grid item xs={4}>
               <Box className="index-change-topic">sSET</Box>
             </Grid>
 
-            {getField("SET Table", "sSET")
-              .map((info, idx) => (
-                <Grid item xs={4}>
-                  <Box className="index-change-detail">{info.stringValue}</Box>
-                </Grid>
-              ))}
+            {getField("SET Table", "sSET")[1].stringValue[0] == "+" ?
+                getField("SET Table", "sSET").map((info, idx) => (
+                  <Grid item xs={4}>
+                    <Box className="index-change-detail" style={{color: "green"}}>{info.stringValue}</Box>
+                  </Grid>
+                )):
+                getField("SET Table", "sSET").map((info, idx) => (
+                  <Grid item xs={4}>
+                    <Box className="index-change-detail" style={{color: "red"}}>{info.stringValue}</Box>
+                  </Grid>
+                ))
+              }
           </Grid>
           <Grid container>
             <Grid item xs={4}>
               <Box className="index-change-topic">SETCLMV</Box>
             </Grid>
 
-            {getField("SET Table", "SETCLMV")
-              .map((info, idx) => (
-                <Grid item xs={4}>
-                  <Box className="index-change-detail">{info.stringValue}</Box>
-                </Grid>
-              ))}
+            {getField("SET Table", "SETCLMV")[1].stringValue[0] == "+" ?
+                getField("SET Table", "SETCLMV").map((info, idx) => (
+                  <Grid item xs={4}>
+                    <Box className="index-change-detail" style={{color: "green"}}>{info.stringValue}</Box>
+                  </Grid>
+                )):
+                getField("SET Table", "SETCLMV").map((info, idx) => (
+                  <Grid item xs={4}>
+                    <Box className="index-change-detail" style={{color: "red"}}>{info.stringValue}</Box>
+                  </Grid>
+                ))
+              }
           </Grid>
           <Grid container>
             <Grid item xs={4}>
               <Box className="index-change-topic">SETHD</Box>
             </Grid>
 
-            {getField("SET Table", "SETHD")
-              .map((info, idx) => (
-                <Grid item xs={4}>
-                  <Box className="index-change-detail">{info.stringValue}</Box>
-                </Grid>
-              ))}
+            {getField("SET Table", "SETHD")[1].stringValue[0] == "+" ?
+                getField("SET Table", "SETHD").map((info, idx) => (
+                  <Grid item xs={4}>
+                    <Box className="index-change-detail" style={{color: "green"}}>{info.stringValue}</Box>
+                  </Grid>
+                )):
+                getField("SET Table", "SETHD").map((info, idx) => (
+                  <Grid item xs={4}>
+                    <Box className="index-change-detail" style={{color: "red"}}>{info.stringValue}</Box>
+                  </Grid>
+                ))
+              }
           </Grid>
           <Grid container>
             <Grid item xs={4}>
               <Box className="index-change-topic">SETTHSI</Box>
             </Grid>
-
-            {getField("SET Table", "SETTHSI")
-              .map((info, idx) => (
-                <Grid item xs={4}>
-                  <Box className="index-change-detail">{info.stringValue}</Box>
-                </Grid>
-              ))}
+            {
+              getField("SET Table", "SETTHSI")[1].stringValue[0] == "+" ?
+                getField("SET Table", "SETTHSI").map((info, idx) => (
+                  <Grid item xs={4}>
+                    <Box className="index-change-detail" style={{color: "green"}}>{info.stringValue}</Box>
+                  </Grid>
+                )):
+                getField("SET Table", "SETTHSI").map((info, idx) => (
+                  <Grid item xs={4}>
+                    <Box className="index-change-detail" style={{color: "red"}}>{info.stringValue}</Box>
+                  </Grid>
+                ))
+              }
           </Grid>
           <Grid container>
             <Grid item xs={4}>
               <Box className="index-change-topic">SETWB</Box>
             </Grid>
 
-            {getField("SET Table", "SETWB")
-              .map((info, idx) => (
-                <Grid item xs={4}>
-                  <Box className="index-change-detail">{info.stringValue}</Box>
-                </Grid>
-              ))}
+            {getField("SET Table", "SETWB")[1].stringValue[0] == "+" ?
+                getField("SET Table", "SETTHSI").map((info, idx) => (
+                  <Grid item xs={4}>
+                    <Box className="index-change-detail" style={{color: "green"}}>{info.stringValue}</Box>
+                  </Grid>
+                )):
+                getField("SET Table", "SETTHSI").map((info, idx) => (
+                  <Grid item xs={4}>
+                    <Box className="index-change-detail" style={{color: "red"}}>{info.stringValue}</Box>
+                  </Grid>
+                ))
+              }
           </Grid>
           
           <Grid container>
