@@ -70,7 +70,10 @@ function MostVolume() {
               {getField("mostActiveVolume", "1").slice(3,4)
               .map((info, idx) => (
                 <Grid item xs={3.5}>
-                  <Box className="pop-detail">{info.stringValue}</Box>
+                  {
+                  info.stringValue[0] != "+" && info.stringValue[0] != '-' ? <Box className="pop-detail">{info.stringValue}</Box> : 
+                  info.stringValue[0] == "+" ? <Box className="pop-detail" style={{color:"green"}}>{info.stringValue}</Box> : <Box className="pop-detail" style={{color:"red"}}>{info.stringValue}</Box>
+                  }
                 </Grid>
               ))}
           </Grid>
@@ -97,7 +100,10 @@ function MostVolume() {
               {getField("mostActiveVolume", "2").slice(3,4)
               .map((info, idx) => (
                 <Grid item xs={3.5}>
-                  <Box className="pop-detail">{info.stringValue}</Box>
+                  {
+                  info.stringValue[0] != "+" && info.stringValue[0] != '-' ? <Box className="pop-detail">{info.stringValue}</Box> : 
+                  info.stringValue[0] == "+" ? <Box className="pop-detail" style={{color:"green"}}>{info.stringValue}</Box> : <Box className="pop-detail" style={{color:"red"}}>{info.stringValue}</Box>
+                  }
                 </Grid>
               ))}
           </Grid>
@@ -124,7 +130,10 @@ function MostVolume() {
               {getField("mostActiveVolume", "3").slice(3,4)
               .map((info, idx) => (
                 <Grid item xs={3.5}>
-                  <Box className="pop-detail">{info.stringValue}</Box>
+                  {
+                  info.stringValue[0] != "+" && info.stringValue[0] != '-' ? <Box className="pop-detail">{info.stringValue}</Box> : 
+                  info.stringValue[0] == "+" ? <Box className="pop-detail" style={{color:"green"}}>{info.stringValue}</Box> : <Box className="pop-detail" style={{color:"red"}}>{info.stringValue}</Box>
+                  }
                 </Grid>
               ))}
           </Grid>
@@ -151,7 +160,10 @@ function MostVolume() {
               {getField("mostActiveVolume", "4").slice(3,4)
               .map((info, idx) => (
                 <Grid item xs={3.5}>
-                  <Box className="pop-detail">{info.stringValue}</Box>
+                  {
+                  info.stringValue[0] != "+" && info.stringValue[0] != '-' ? <Box className="pop-detail">{info.stringValue}</Box> : 
+                  info.stringValue[0] == "+" ? <Box className="pop-detail" style={{color:"green"}}>{info.stringValue}</Box> : <Box className="pop-detail" style={{color:"red"}}>{info.stringValue}</Box>
+                  }
                 </Grid>
               ))}
           </Grid>
@@ -177,7 +189,10 @@ function MostVolume() {
               {getField("mostActiveVolume", "5").slice(3,4)
               .map((info, idx) => (
                 <Grid item xs={3.5}>
-                  <Box className="pop-detail">{info.stringValue}</Box>
+                  {
+                  info.stringValue[0] != "+" && info.stringValue[0] != '-' ? <Box className="pop-detail">{info.stringValue}</Box> : 
+                  info.stringValue[0] == "+" ? <Box className="pop-detail" style={{color:"green"}}>{info.stringValue}</Box> : <Box className="pop-detail" style={{color:"red"}}>{info.stringValue}</Box>
+                  }
                 </Grid>
               ))}
 </Grid>
@@ -204,7 +219,10 @@ function MostVolume() {
               {getField("mostActiveVolume", "6").slice(3,4)
               .map((info, idx) => (
                 <Grid item xs={3.5}>
-                  <Box className="pop-detail">{info.stringValue}</Box>
+                  {
+                  info.stringValue[0] != "+" && info.stringValue[0] != '-' ? <Box className="pop-detail">{info.stringValue}</Box> : 
+                  info.stringValue[0] == "+" ? <Box className="pop-detail" style={{color:"green"}}>{info.stringValue}</Box> : <Box className="pop-detail" style={{color:"red"}}>{info.stringValue}</Box>
+                  }
                 </Grid>
               ))}
 </Grid>
@@ -231,7 +249,10 @@ function MostVolume() {
               {getField("mostActiveVolume", "7").slice(3,4)
               .map((info, idx) => (
                 <Grid item xs={3.5}>
-                  <Box className="pop-detail">{info.stringValue}</Box>
+                  {
+                  info.stringValue[0] != "+" && info.stringValue[0] != '-' ? <Box className="pop-detail">{info.stringValue}</Box> : 
+                  info.stringValue[0] == "+" ? <Box className="pop-detail" style={{color:"green"}}>{info.stringValue}</Box> : <Box className="pop-detail" style={{color:"red"}}>{info.stringValue}</Box>
+                  }
                 </Grid>
               ))}
 </Grid>
@@ -258,7 +279,10 @@ function MostVolume() {
               {getField("mostActiveVolume", "8").slice(3,4)
               .map((info, idx) => (
                 <Grid item xs={3.5}>
-                  <Box className="pop-detail">{info.stringValue}</Box>
+                  {
+                  info.stringValue[0] != "+" && info.stringValue[0] != '-' ? <Box className="pop-detail">{info.stringValue}</Box> : 
+                  info.stringValue[0] == "+" ? <Box className="pop-detail" style={{color:"green"}}>{info.stringValue}</Box> : <Box className="pop-detail" style={{color:"red"}}>{info.stringValue}</Box>
+                  }
                 </Grid>
               ))}
 </Grid>
@@ -285,7 +309,10 @@ function MostVolume() {
               {getField("mostActiveVolume", "9").slice(3,4)
               .map((info, idx) => (
                 <Grid item xs={3.5}>
-                  <Box className="pop-detail">{info.stringValue}</Box>
+                  {
+                  info.stringValue[0] != "+" && info.stringValue[0] != '-' ? <Box className="pop-detail">{info.stringValue}</Box> : 
+                  info.stringValue[0] == "+" ? <Box className="pop-detail" style={{color:"green"}}>{info.stringValue}</Box> : <Box className="pop-detail" style={{color:"red"}}>{info.stringValue}</Box>
+                  }
                 </Grid>
               ))}
 </Grid>
@@ -312,7 +339,10 @@ function MostVolume() {
               {getField("mostActiveVolume", "10").slice(3,4)
               .map((info, idx) => (
                 <Grid item xs={3.5}>
-                  <Box className="pop-detail">{info.stringValue}</Box>
+                  {
+                  info.stringValue[0] != "+" && info.stringValue[0] != '-' ? <Box className="pop-detail">{info.stringValue}</Box> : 
+                  info.stringValue[0] == "+" ? <Box className="pop-detail" style={{color:"green"}}>{info.stringValue}</Box> : <Box className="pop-detail" style={{color:"red"}}>{info.stringValue}</Box>
+                  }
                 </Grid>
               ))}
 </Grid>

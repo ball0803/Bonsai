@@ -67,10 +67,13 @@ function Dividend() {
       </Grid>
     ))}
     {getField("topDivideYield", "1").slice(3,4)
-    .map((info, idx) => (
-      <Grid item xs={3.5}>
-        <Box className="pop-detail">{info.stringValue}</Box>
-      </Grid>
+              .map((info, idx) => (
+                <Grid item xs={3.5}>
+                  {
+                  info.stringValue[0] != "+" && info.stringValue[0] != '-' ? <Box className="pop-detail">{info.stringValue}</Box> : 
+                  info.stringValue[0] == "+" ? <Box className="pop-detail" style={{color:"green"}}>{info.stringValue}</Box> : <Box className="pop-detail" style={{color:"red"}}>{info.stringValue}</Box>
+                  }
+                </Grid>
     ))}
 </Grid>
 <Grid container>
@@ -94,10 +97,13 @@ function Dividend() {
       </Grid>
     ))}
     {getField("topDivideYield", "2").slice(3,4)
-    .map((info, idx) => (
-      <Grid item xs={3.5}>
-        <Box className="pop-detail">{info.stringValue}</Box>
-      </Grid>
+              .map((info, idx) => (
+                <Grid item xs={3.5}>
+                  {
+                  info.stringValue[0] != "+" && info.stringValue[0] != '-' ? <Box className="pop-detail">{info.stringValue}</Box> : 
+                  info.stringValue[0] == "+" ? <Box className="pop-detail" style={{color:"green"}}>{info.stringValue}</Box> : <Box className="pop-detail" style={{color:"red"}}>{info.stringValue}</Box>
+                  }
+                </Grid>
     ))}
 </Grid>
 <Grid container>
@@ -121,10 +127,13 @@ function Dividend() {
       </Grid>
     ))}
     {getField("topDivideYield", "3").slice(3,4)
-    .map((info, idx) => (
-      <Grid item xs={3.5}>
-        <Box className="pop-detail">{info.stringValue}</Box>
-      </Grid>
+              .map((info, idx) => (
+                <Grid item xs={3.5}>
+                  {
+                  info.stringValue[0] != "+" && info.stringValue[0] != '-' ? <Box className="pop-detail">{info.stringValue}</Box> : 
+                  info.stringValue[0] == "+" ? <Box className="pop-detail" style={{color:"green"}}>{info.stringValue}</Box> : <Box className="pop-detail" style={{color:"red"}}>{info.stringValue}</Box>
+                  }
+                </Grid>
     ))}
 </Grid>
 <Grid container>
@@ -148,10 +157,13 @@ function Dividend() {
       </Grid>
     ))}
     {getField("topDivideYield", "4").slice(3,4)
-    .map((info, idx) => (
-      <Grid item xs={3.5}>
-        <Box className="pop-detail">{info.stringValue}</Box>
-      </Grid>
+              .map((info, idx) => (
+                <Grid item xs={3.5}>
+                  {
+                  info.stringValue[0] != "+" && info.stringValue[0] != '-' ? <Box className="pop-detail">{info.stringValue}</Box> : 
+                  info.stringValue[0] == "+" ? <Box className="pop-detail" style={{color:"green"}}>{info.stringValue}</Box> : <Box className="pop-detail" style={{color:"red"}}>{info.stringValue}</Box>
+                  }
+                </Grid>
     ))}
 </Grid>
 <Grid container>
@@ -174,10 +186,13 @@ function Dividend() {
       </Grid>
     ))}
     {getField("topDivideYield", "5").slice(3,4)
-    .map((info, idx) => (
-      <Grid item xs={3.5}>
-        <Box className="pop-detail">{info.stringValue}</Box>
-      </Grid>
+              .map((info, idx) => (
+                <Grid item xs={3.5}>
+                  {
+                  info.stringValue[0] != "+" && info.stringValue[0] != '-' ? <Box className="pop-detail">{info.stringValue}</Box> : 
+                  info.stringValue[0] == "+" ? <Box className="pop-detail" style={{color:"green"}}>{info.stringValue}</Box> : <Box className="pop-detail" style={{color:"red"}}>{info.stringValue}</Box>
+                  }
+                </Grid>
     ))}
 </Grid>
 <Grid container>
@@ -201,10 +216,13 @@ function Dividend() {
       </Grid>
     ))}
     {getField("topDivideYield", "6").slice(3,4)
-    .map((info, idx) => (
-      <Grid item xs={3.5}>
-        <Box className="pop-detail">{info.stringValue}</Box>
-      </Grid>
+              .map((info, idx) => (
+                <Grid item xs={3.5}>
+                  {
+                  info.stringValue[0] != "+" && info.stringValue[0] != '-' ? <Box className="pop-detail">{info.stringValue}</Box> : 
+                  info.stringValue[0] == "+" ? <Box className="pop-detail" style={{color:"green"}}>{info.stringValue}</Box> : <Box className="pop-detail" style={{color:"red"}}>{info.stringValue}</Box>
+                  }
+                </Grid>
     ))}
 </Grid>
 <Grid container>
@@ -228,10 +246,13 @@ function Dividend() {
       </Grid>
     ))}
     {getField("topDivideYield", "7").slice(3,4)
-    .map((info, idx) => (
-      <Grid item xs={3.5}>
-        <Box className="pop-detail">{info.stringValue}</Box>
-      </Grid>
+              .map((info, idx) => (
+                <Grid item xs={3.5}>
+                  {
+                  info.stringValue[0] != "+" && info.stringValue[0] != '-' ? <Box className="pop-detail">{info.stringValue}</Box> : 
+                  info.stringValue[0] == "+" ? <Box className="pop-detail" style={{color:"green"}}>{info.stringValue}</Box> : <Box className="pop-detail" style={{color:"red"}}>{info.stringValue}</Box>
+                  }
+                </Grid>
     ))}
 </Grid>
 <Grid container>
@@ -255,10 +276,13 @@ function Dividend() {
       </Grid>
     ))}
     {getField("topDivideYield", "8").slice(3,4)
-    .map((info, idx) => (
-      <Grid item xs={3.5}>
-        <Box className="pop-detail">{info.stringValue}</Box>
-      </Grid>
+              .map((info, idx) => (
+                <Grid item xs={3.5}>
+                  {
+                  info.stringValue[0] != "+" && info.stringValue[0] != '-' ? <Box className="pop-detail">{info.stringValue}</Box> : 
+                  info.stringValue[0] == "+" ? <Box className="pop-detail" style={{color:"green"}}>{info.stringValue}</Box> : <Box className="pop-detail" style={{color:"red"}}>{info.stringValue}</Box>
+                  }
+                </Grid>
     ))}
 </Grid>
 <Grid container>
@@ -282,10 +306,13 @@ function Dividend() {
       </Grid>
     ))}
     {getField("topDivideYield", "9").slice(3,4)
-    .map((info, idx) => (
-      <Grid item xs={3.5}>
-        <Box className="pop-detail">{info.stringValue}</Box>
-      </Grid>
+              .map((info, idx) => (
+                <Grid item xs={3.5}>
+                  {
+                  info.stringValue[0] != "+" && info.stringValue[0] != '-' ? <Box className="pop-detail">{info.stringValue}</Box> : 
+                  info.stringValue[0] == "+" ? <Box className="pop-detail" style={{color:"green"}}>{info.stringValue}</Box> : <Box className="pop-detail" style={{color:"red"}}>{info.stringValue}</Box>
+                  }
+                </Grid>
     ))}
 </Grid>
 <Grid container>
@@ -309,10 +336,13 @@ function Dividend() {
       </Grid>
     ))}
     {getField("topDivideYield", "10").slice(3,4)
-    .map((info, idx) => (
-      <Grid item xs={3.5}>
-        <Box className="pop-detail">{info.stringValue}</Box>
-      </Grid>
+              .map((info, idx) => (
+                <Grid item xs={3.5}>
+                  {
+                  info.stringValue[0] != "+" && info.stringValue[0] != '-' ? <Box className="pop-detail">{info.stringValue}</Box> : 
+                  info.stringValue[0] == "+" ? <Box className="pop-detail" style={{color:"green"}}>{info.stringValue}</Box> : <Box className="pop-detail" style={{color:"red"}}>{info.stringValue}</Box>
+                  }
+                </Grid>
     ))}
 </Grid>
           

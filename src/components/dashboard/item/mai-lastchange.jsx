@@ -49,12 +49,18 @@ function MaiLastchange() {
               <Box className="index-change-topic">MAI</Box>
             </Grid>
 
-            {getField("mai Table", "mai")
-              .map((info, idx) => (
-                <Grid item xs={4}>
-                  <Box className="index-change-detail">{info.stringValue}</Box>
-                </Grid>
-              ))}
+            {getField("mai Table", "mai")[1].stringValue[0] == "+" ?
+                getField("mai Table", "mai").map((info, idx) => (
+                  <Grid item xs={4}>
+                    <Box className="index-change-detail" style={{color: "green"}}>{info.stringValue}</Box>
+                  </Grid>
+                )):
+                getField("mai Table", "mai").map((info, idx) => (
+                  <Grid item xs={4}>
+                    <Box className="index-change-detail" style={{color: "red"}}>{info.stringValue}</Box>
+                  </Grid>
+                ))
+              }
           </Grid>
           
           

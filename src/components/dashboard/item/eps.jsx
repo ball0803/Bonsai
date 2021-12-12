@@ -68,10 +68,13 @@ function EPS() {
       </Grid>
     ))}
     {getField("topEPS", "1").slice(3,4)
-    .map((info, idx) => (
-      <Grid item xs={3.5}>
-        <Box className="pop-detail">{info.stringValue}</Box>
-      </Grid>
+              .map((info, idx) => (
+                <Grid item xs={3.5}>
+                  {
+                  info.stringValue[0] != "+" && info.stringValue[0] != '-' ? <Box className="pop-detail">{info.stringValue}</Box> : 
+                  info.stringValue[0] == "+" ? <Box className="pop-detail" style={{color:"green"}}>{info.stringValue}</Box> : <Box className="pop-detail" style={{color:"red"}}>{info.stringValue}</Box>
+                  }
+                </Grid>
     ))}
 </Grid>
 <Grid container>
@@ -95,10 +98,13 @@ function EPS() {
       </Grid>
     ))}
     {getField("topEPS", "2").slice(3,4)
-    .map((info, idx) => (
-      <Grid item xs={3.5}>
-        <Box className="pop-detail">{info.stringValue}</Box>
-      </Grid>
+              .map((info, idx) => (
+                <Grid item xs={3.5}>
+                  {
+                  info.stringValue[0] != "+" && info.stringValue[0] != '-' ? <Box className="pop-detail">{info.stringValue}</Box> : 
+                  info.stringValue[0] == "+" ? <Box className="pop-detail" style={{color:"green"}}>{info.stringValue}</Box> : <Box className="pop-detail" style={{color:"red"}}>{info.stringValue}</Box>
+                  }
+                </Grid>
     ))}
 </Grid>
 <Grid container>
@@ -122,10 +128,13 @@ function EPS() {
       </Grid>
     ))}
     {getField("topEPS", "3").slice(3,4)
-    .map((info, idx) => (
-      <Grid item xs={3.5}>
-        <Box className="pop-detail">{info.stringValue}</Box>
-      </Grid>
+              .map((info, idx) => (
+                <Grid item xs={3.5}>
+                  {
+                  info.stringValue[0] != "+" && info.stringValue[0] != '-' ? <Box className="pop-detail">{info.stringValue}</Box> : 
+                  info.stringValue[0] == "+" ? <Box className="pop-detail" style={{color:"green"}}>{info.stringValue}</Box> : <Box className="pop-detail" style={{color:"red"}}>{info.stringValue}</Box>
+                  }
+                </Grid>
     ))}
 </Grid>
 <Grid container>
@@ -149,10 +158,13 @@ function EPS() {
       </Grid>
     ))}
     {getField("topEPS", "4").slice(3,4)
-    .map((info, idx) => (
-      <Grid item xs={3.5}>
-        <Box className="pop-detail">{info.stringValue}</Box>
-      </Grid>
+              .map((info, idx) => (
+                <Grid item xs={3.5}>
+                  {
+                  info.stringValue[0] != "+" && info.stringValue[0] != '-' ? <Box className="pop-detail">{info.stringValue}</Box> : 
+                  info.stringValue[0] == "+" ? <Box className="pop-detail" style={{color:"green"}}>{info.stringValue}</Box> : <Box className="pop-detail" style={{color:"red"}}>{info.stringValue}</Box>
+                  }
+                </Grid>
     ))}
 </Grid>
 <Grid container>
@@ -175,10 +187,13 @@ function EPS() {
       </Grid>
     ))}
     {getField("topEPS", "5").slice(3,4)
-    .map((info, idx) => (
-      <Grid item xs={3.5}>
-        <Box className="pop-detail">{info.stringValue}</Box>
-      </Grid>
+              .map((info, idx) => (
+                <Grid item xs={3.5}>
+                  {
+                  info.stringValue[0] != "+" && info.stringValue[0] != '-' ? <Box className="pop-detail">{info.stringValue}</Box> : 
+                  info.stringValue[0] == "+" ? <Box className="pop-detail" style={{color:"green"}}>{info.stringValue}</Box> : <Box className="pop-detail" style={{color:"red"}}>{info.stringValue}</Box>
+                  }
+                </Grid>
     ))}
 </Grid>
 <Grid container>
@@ -202,10 +217,13 @@ function EPS() {
       </Grid>
     ))}
     {getField("topEPS", "6").slice(3,4)
-    .map((info, idx) => (
-      <Grid item xs={3.5}>
-        <Box className="pop-detail">{info.stringValue}</Box>
-      </Grid>
+              .map((info, idx) => (
+                <Grid item xs={3.5}>
+                  {
+                  info.stringValue[0] != "+" && info.stringValue[0] != '-' ? <Box className="pop-detail">{info.stringValue}</Box> : 
+                  info.stringValue[0] == "+" ? <Box className="pop-detail" style={{color:"green"}}>{info.stringValue}</Box> : <Box className="pop-detail" style={{color:"red"}}>{info.stringValue}</Box>
+                  }
+                </Grid>
     ))}
 </Grid>
 <Grid container>
@@ -229,10 +247,13 @@ function EPS() {
       </Grid>
     ))}
     {getField("topEPS", "7").slice(3,4)
-    .map((info, idx) => (
-      <Grid item xs={3.5}>
-        <Box className="pop-detail">{info.stringValue}</Box>
-      </Grid>
+              .map((info, idx) => (
+                <Grid item xs={3.5}>
+                  {
+                  info.stringValue[0] != "+" && info.stringValue[0] != '-' ? <Box className="pop-detail">{info.stringValue}</Box> : 
+                  info.stringValue[0] == "+" ? <Box className="pop-detail" style={{color:"green"}}>{info.stringValue}</Box> : <Box className="pop-detail" style={{color:"red"}}>{info.stringValue}</Box>
+                  }
+                </Grid>
     ))}
 </Grid>
 <Grid container>
@@ -256,10 +277,13 @@ function EPS() {
       </Grid>
     ))}
     {getField("topEPS", "8").slice(3,4)
-    .map((info, idx) => (
-      <Grid item xs={3.5}>
-        <Box className="pop-detail">{info.stringValue}</Box>
-      </Grid>
+              .map((info, idx) => (
+                <Grid item xs={3.5}>
+                  {
+                  info.stringValue[0] != "+" && info.stringValue[0] != '-' ? <Box className="pop-detail">{info.stringValue}</Box> : 
+                  info.stringValue[0] == "+" ? <Box className="pop-detail" style={{color:"green"}}>{info.stringValue}</Box> : <Box className="pop-detail" style={{color:"red"}}>{info.stringValue}</Box>
+                  }
+                </Grid>
     ))}
 </Grid>
 <Grid container>
@@ -283,10 +307,13 @@ function EPS() {
       </Grid>
     ))}
     {getField("topEPS", "9").slice(3,4)
-    .map((info, idx) => (
-      <Grid item xs={3.5}>
-        <Box className="pop-detail">{info.stringValue}</Box>
-      </Grid>
+              .map((info, idx) => (
+                <Grid item xs={3.5}>
+                  {
+                  info.stringValue[0] != "+" && info.stringValue[0] != '-' ? <Box className="pop-detail">{info.stringValue}</Box> : 
+                  info.stringValue[0] == "+" ? <Box className="pop-detail" style={{color:"green"}}>{info.stringValue}</Box> : <Box className="pop-detail" style={{color:"red"}}>{info.stringValue}</Box>
+                  }
+                </Grid>
     ))}
 </Grid>
 <Grid container>
@@ -310,10 +337,13 @@ function EPS() {
       </Grid>
     ))}
     {getField("topEPS", "10").slice(3,4)
-    .map((info, idx) => (
-      <Grid item xs={3.5}>
-        <Box className="pop-detail">{info.stringValue}</Box>
-      </Grid>
+              .map((info, idx) => (
+                <Grid item xs={3.5}>
+                  {
+                  info.stringValue[0] != "+" && info.stringValue[0] != '-' ? <Box className="pop-detail">{info.stringValue}</Box> : 
+                  info.stringValue[0] == "+" ? <Box className="pop-detail" style={{color:"green"}}>{info.stringValue}</Box> : <Box className="pop-detail" style={{color:"red"}}>{info.stringValue}</Box>
+                  }
+                </Grid>
     ))}
 </Grid>
           

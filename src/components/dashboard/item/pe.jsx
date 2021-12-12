@@ -70,7 +70,10 @@ function PE() {
               {getField("topPE", "1").slice(3,4)
               .map((info, idx) => (
                 <Grid item xs={3.5}>
-                  <Box className="pop-detail">{info.stringValue}</Box>
+                  {
+                  info.stringValue[0] != "+" && info.stringValue[0] != '-' ? <Box className="pop-detail">{info.stringValue}</Box> : 
+                  info.stringValue[0] == "+" ? <Box className="pop-detail" style={{color:"green"}}>{info.stringValue}</Box> : <Box className="pop-detail" style={{color:"red"}}>{info.stringValue}</Box>
+                  }
                 </Grid>
               ))}
           </Grid>
@@ -97,7 +100,10 @@ function PE() {
               {getField("topPE", "2").slice(3,4)
               .map((info, idx) => (
                 <Grid item xs={3.5}>
-                  <Box className="pop-detail">{info.stringValue}</Box>
+                  {
+                  info.stringValue[0] != "+" && info.stringValue[0] != '-' ? <Box className="pop-detail">{info.stringValue}</Box> : 
+                  info.stringValue[0] == "+" ? <Box className="pop-detail" style={{color:"green"}}>{info.stringValue}</Box> : <Box className="pop-detail" style={{color:"red"}}>{info.stringValue}</Box>
+                  }
                 </Grid>
               ))}
           </Grid>
@@ -124,7 +130,10 @@ function PE() {
               {getField("topPE", "3").slice(3,4)
               .map((info, idx) => (
                 <Grid item xs={3.5}>
-                  <Box className="pop-detail">{info.stringValue}</Box>
+                  {
+                  info.stringValue[0] != "+" && info.stringValue[0] != '-' ? <Box className="pop-detail">{info.stringValue}</Box> : 
+                  info.stringValue[0] == "+" ? <Box className="pop-detail" style={{color:"green"}}>{info.stringValue}</Box> : <Box className="pop-detail" style={{color:"red"}}>{info.stringValue}</Box>
+                  }
                 </Grid>
               ))}
           </Grid>
@@ -151,7 +160,10 @@ function PE() {
               {getField("topPE", "4").slice(3,4)
               .map((info, idx) => (
                 <Grid item xs={3.5}>
-                  <Box className="pop-detail">{info.stringValue}</Box>
+                  {
+                  info.stringValue[0] != "+" && info.stringValue[0] != '-' ? <Box className="pop-detail">{info.stringValue}</Box> : 
+                  info.stringValue[0] == "+" ? <Box className="pop-detail" style={{color:"green"}}>{info.stringValue}</Box> : <Box className="pop-detail" style={{color:"red"}}>{info.stringValue}</Box>
+                  }
                 </Grid>
               ))}
           </Grid>
@@ -177,7 +189,10 @@ function PE() {
               {getField("topPE", "5").slice(3,4)
               .map((info, idx) => (
                 <Grid item xs={3.5}>
-                  <Box className="pop-detail">{info.stringValue}</Box>
+                  {
+                  info.stringValue[0] != "+" && info.stringValue[0] != '-' ? <Box className="pop-detail">{info.stringValue}</Box> : 
+                  info.stringValue[0] == "+" ? <Box className="pop-detail" style={{color:"green"}}>{info.stringValue}</Box> : <Box className="pop-detail" style={{color:"red"}}>{info.stringValue}</Box>
+                  }
                 </Grid>
               ))}
 </Grid>
@@ -204,7 +219,10 @@ function PE() {
               {getField("topPE", "6").slice(3,4)
               .map((info, idx) => (
                 <Grid item xs={3.5}>
-                  <Box className="pop-detail">{info.stringValue}</Box>
+                  {
+                  info.stringValue[0] != "+" && info.stringValue[0] != '-' ? <Box className="pop-detail">{info.stringValue}</Box> : 
+                  info.stringValue[0] == "+" ? <Box className="pop-detail" style={{color:"green"}}>{info.stringValue}</Box> : <Box className="pop-detail" style={{color:"red"}}>{info.stringValue}</Box>
+                  }
                 </Grid>
               ))}
 </Grid>
@@ -231,7 +249,10 @@ function PE() {
               {getField("topPE", "7").slice(3,4)
               .map((info, idx) => (
                 <Grid item xs={3.5}>
-                  <Box className="pop-detail">{info.stringValue}</Box>
+                  {
+                  info.stringValue[0] != "+" && info.stringValue[0] != '-' ? <Box className="pop-detail">{info.stringValue}</Box> : 
+                  info.stringValue[0] == "+" ? <Box className="pop-detail" style={{color:"green"}}>{info.stringValue}</Box> : <Box className="pop-detail" style={{color:"red"}}>{info.stringValue}</Box>
+                  }
                 </Grid>
               ))}
 </Grid>
@@ -258,7 +279,10 @@ function PE() {
               {getField("topPE", "8").slice(3,4)
               .map((info, idx) => (
                 <Grid item xs={3.5}>
-                  <Box className="pop-detail">{info.stringValue}</Box>
+                  {
+                  info.stringValue[0] != "+" && info.stringValue[0] != '-' ? <Box className="pop-detail">{info.stringValue}</Box> : 
+                  info.stringValue[0] == "+" ? <Box className="pop-detail" style={{color:"green"}}>{info.stringValue}</Box> : <Box className="pop-detail" style={{color:"red"}}>{info.stringValue}</Box>
+                  }
                 </Grid>
               ))}
 </Grid>
@@ -285,7 +309,10 @@ function PE() {
               {getField("topPE", "9").slice(3,4)
               .map((info, idx) => (
                 <Grid item xs={3.5}>
-                  <Box className="pop-detail">{info.stringValue}</Box>
+                  {
+                  info.stringValue[0] != "+" && info.stringValue[0] != '-' ? <Box className="pop-detail">{info.stringValue}</Box> : 
+                  info.stringValue[0] == "+" ? <Box className="pop-detail" style={{color:"green"}}>{info.stringValue}</Box> : <Box className="pop-detail" style={{color:"red"}}>{info.stringValue}</Box>
+                  }
                 </Grid>
               ))}
 </Grid>
@@ -312,7 +339,10 @@ function PE() {
               {getField("topPE", "10").slice(3,4)
               .map((info, idx) => (
                 <Grid item xs={3.5}>
-                  <Box className="pop-detail">{info.stringValue}</Box>
+                  {
+                  info.stringValue[0] != "+" && info.stringValue[0] != '-' ? <Box className="pop-detail">{info.stringValue}</Box> : 
+                  info.stringValue[0] == "+" ? <Box className="pop-detail" style={{color:"green"}}>{info.stringValue}</Box> : <Box className="pop-detail" style={{color:"red"}}>{info.stringValue}</Box>
+                  }
                 </Grid>
               ))}
 </Grid>
