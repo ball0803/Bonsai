@@ -1,12 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import Posts from './post';
-import Pagination from './pagination';
 import {db} from "../../Firebase";
 import { onSnapshot, collection, query, where, getDocs, limit, orderBy, toDate } from "firebase/firestore";
 import "./Pagination.css";
 import { Box } from '@mui/system';
+import SideMenu from '../SideMenu';
+import Pagination from '@mui/material/Pagination';
+import { Typography } from '@mui/material';
 
-const Loading = () => {
+const Loading = (props) => {
   const [posts, setPosts] = useState([]);
   const [loading, setLoading] = useState(false);
   const [currentPage, setCurrentPage] = useState(1);
@@ -35,21 +37,35 @@ const Loading = () => {
 
   // Change page
   const paginate = pageNumber => setCurrentPage(pageNumber);
-
+  const handleChange = (event, value) => {
+    setCurrentPage(value);
+    window.scroll(0, 0)
+  };
   return (
     <>
-    <div className='title-box'>
-      <Box className="head-title">Recent News</Box>
-      </div>
-      
-    <br/>
-      <Posts posts={currentPosts} loading={loading} />
-      <Pagination
-        postsPerPage={postsPerPage}
-        totalPosts={posts.length}
-        paginate={paginate}
-      />
-      <Box>Page: {currentPage}</Box>
+    <SideMenu focus="Home"/>
+    <div className="container">
+        <Typography variant="h2" style={{fontFamily: 'Kanit'}}>Recent News</Typography>
+        <Box>Page: {currentPage}</Box>
+      {/* <div className='title-box'>
+        <Box className="head-title">Recent News</Box>
+      </div> */}
+        
+      <br/>
+        <Posts posts={currentPosts} loading={loading} />
+        <Pagination page={currentPage}
+        className="center-page"
+        count={Math.ceil(posts.length / postsPerPage)}
+        variant='outlined'
+        shape='rounded'
+        showFirstButton
+        showLastButton
+        onChange={handleChange}
+        size='large'
+         />
+        
+    </div>
+    
     </>
   );
 };

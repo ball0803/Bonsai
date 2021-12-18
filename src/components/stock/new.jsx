@@ -2,17 +2,16 @@
 import React, {useState, useEffect} from 'react';
 import { createTheme, Typography } from '@mui/material';
 import { Box } from '@mui/system';
-import { Avatar } from '@mui/material';
 import { Link, useParams } from 'react-router-dom';
 import "./stock.css";
 import { FaRegNewspaper } from "react-icons/fa";
 import { IoIosArrowForward } from "react-icons/io";
 import { Grid } from "@mui/material";
-import app from "../../Firebase";
 import {db} from "../../Firebase";
 import { onSnapshot, collection, query, where, getDocs, limit, orderBy, toDate, get } from "firebase/firestore";
 import Posts from '../pagination/post';
-import Pagination from '../pagination/pagination';
+import SideMenu from '../SideMenu';
+import Pagination from '@mui/material/Pagination';
 
 const theme = createTheme({
   typography: {
@@ -30,7 +29,10 @@ function News() {
   const [loading, setLoading] = useState(false);
   const [currentPage, setCurrentPage] = useState(1);
   const [postsPerPage] = useState(9);
-
+  const handleChange = (event, value) => {
+    setCurrentPage(value);
+    window.scroll(0, 0)
+  };
   useEffect(() => {
     const fetchPosts = async () => {
       setLoading(true);
@@ -57,10 +59,13 @@ function News() {
   // Change page
   const paginate = pageNumber => setCurrentPage(pageNumber);
   return (
-      <div>
+      <>
+      <SideMenu focus="Search"/>
+      <div className="container">
         <Typography component="div" theme={theme}>
         <div className='stock-box'>
         <Box className="stock-title">{stock}</Box>
+            <Box>Page: {currentPage}</Box>
         </div>
           <button className="link-fundamental"><Link className="linkto-new" to={`/search/${stock}`}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <div className="overlink">
@@ -74,16 +79,20 @@ function News() {
             /></div></Link>
           </button>
         </Typography>
-       <br/>
+        <br/>
         <Posts posts={currentPosts} loading={loading} />
-        <Pagination
-          postsPerPage={postsPerPage}
-          totalPosts={posts.length}
-          paginate={paginate}
-        />
-        <Box>Page: {currentPage}</Box>
-      
-    </div>
+        <Pagination page={currentPage}
+        className="center-page"
+        count={Math.ceil(posts.length / postsPerPage)}
+        variant='outlined'
+        shape='rounded'
+        showFirstButton
+        showLastButton
+        onChange={handleChange}
+        size='large'
+         />
+      </div>
+      </>
       
     );
   }

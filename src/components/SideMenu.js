@@ -3,7 +3,8 @@ import logo from "../assets/Logo.svg";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import MenuItem from "./MenuItem";
-import { Typography,Box,createTheme } from '@mui/material';
+import { Typography,Box,createTheme, buttonClasses } from '@mui/material';
+import { Button } from "@mui/material";
 /**
  * @author
  * @function SideMenu
@@ -50,14 +51,7 @@ export const menuItems = [
 
 const SideMenu = (props) => {
   const [inactive, setInactive] = useState(false);
-
-  useEffect(() => {
-    if (inactive) {
-      removeActiveClassFromSubMenu();
-    }
-
-    props.onCollapse(inactive);
-  }, [inactive]);
+  const [Focus, setFocus] = useState(props.focus)
 
   //just an improvment and it is not recorded in video :(
   const removeActiveClassFromSubMenu = () => {
@@ -88,10 +82,7 @@ const SideMenu = (props) => {
   return (
     <div className={`side-menu ${inactive ? "inactive" : ""}`}>
       <div className="top-section">
-        <div className="logo">
-          <img src={logo} alt="webscript" />
-          
-        </div>
+          <img src={logo} alt="webscript" className="logo"/>
         <Typography className="side-brand" component="div" theme={theme}>
             <Box className="side-name">Bonsai</Box>
             <Box className="side-text">Stock News</Box>
@@ -101,41 +92,37 @@ const SideMenu = (props) => {
       <div className="main-menu">
         <ul>
           {menuItems.map((menuItem, index) => (
-            <MenuItem
-              key={index}
-              name={menuItem.name}
-              exact={menuItem.exact}
-              to={menuItem.to}
-              subMenus={menuItem.subMenus || []}
-              iconClassName={menuItem.iconClassName}
-              onClick={(e) => {
-                if (inactive) {
-                  setInactive(false);
-                }
-              }}
-            />
+            menuItem.name == Focus ?
+            <Button variant="outlined" 
+            href={menuItem.to}
+            startIcon={<i class={menuItem.iconClassName} style={{marginRight: "10px", color: "#2A9F3D"}}></i>}
+            style={{borderRadius: "15px",
+            width: '200px',
+            marginTop: "15px",
+            backgroundColor: "#fff",
+            border: '3px solid',
+            justifyContent: "flex-start",
+            borderColor: "#2A9F3D",
+            fontWeight: "500",
+            color: "black"}}
+            onClick={()=>{setFocus(menuItem.name)}}
+            >
+              {menuItem.name}
+            </Button>:
+            <Button variant="text"
+            href={menuItem.to}
+            startIcon={<i class={menuItem.iconClassName} style={{margin: "0 10px 0 10px", color: "#B9B9B9"}}></i>}
+            style={{borderRadius: "15px",
+            width: '200px',
+            marginTop: "15px",
+            justifyContent: "flex-start",
+            fontWeight: "500",
+            color: "#B9B9B9"}}
+            onClick={()=>{setFocus(menuItem.name)}}
+            >
+              {menuItem.name}
+            </Button>
           ))}
-
-          {/* <li>
-            <a className="menu-item">
-              <div className="menu-icon">
-                <i class="bi bi-speedometer2"></i>
-              </div>
-              <span>Dashboard</span>
-            </a>
-          </li>
-          <MenuItem
-            name={"Content"}
-            subMenus={[{ name: "Courses" }, { name: "Videos" }]}
-          />
-          <li>
-            <a className="menu-item">
-              <div className="menu-icon">
-                <i class="bi bi-vector-pen"></i>
-              </div>
-              <span>Design</span>
-            </a>
-          </li> */}
         </ul>
       </div>
 
