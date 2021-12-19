@@ -1,10 +1,9 @@
 import React, { useEffect, useState } from "react";
 import logo from "../assets/Logo.svg";
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import MenuItem from "./MenuItem";
-import { Typography,Box,createTheme, buttonClasses } from '@mui/material';
-import { Button } from "@mui/material";
+import { Typography,Box,createTheme } from '@mui/material';
+import { Button, Tab, Tabs } from "@mui/material";
+
 /**
  * @author
  * @function SideMenu
@@ -45,39 +44,48 @@ export const menuItems = [
     iconClassName: "bi bi-question-lg",
   },
   
-  
-  
 ];
 
 const SideMenu = (props) => {
   const [inactive, setInactive] = useState(false);
   const [Focus, setFocus] = useState(props.focus)
-
-  //just an improvment and it is not recorded in video :(
-  const removeActiveClassFromSubMenu = () => {
-    document.querySelectorAll(".sub-menu").forEach((el) => {
-      el.classList.remove("active");
-    });
+  const [Value, setValue] = useState(0)
+  function a11yProps(index) {
+    return {
+      id: `vertical-tab-${index}`,
+      'aria-controls': `vertical-tabpanel-${index}`,
+    };
+  }
+    const tabStyle = {
+      default_tab:{
+          color: "grey",
+          width: '200px',
+          height: "40px",
+      },
+      active_tab:{
+          color: "#2A9F3D",
+          width: '200px',
+          height: "40px",
+      }
   };
 
-  /*just a little improvement over click function of menuItem
-    Now no need to use expand state variable in MenuItem component
-  */
-  useEffect(() => {
-    let menuItems = document.querySelectorAll(".menu-item");
-    menuItems.forEach((el) => {
-      el.addEventListener("click", (e) => {
-        const next = el.nextElementSibling;
-        removeActiveClassFromSubMenu();
-        menuItems.forEach((el) => el.classList.remove("active"));
-        el.classList.toggle("active");
-        console.log(next);
-        if (next !== null) {
-          next.classList.toggle("active");
-        }
-      });
-    });
-  }, []);
+  const scrollElement =[props.IS, props.SG, props.FR, props.FS]
+  
+  const handleScroll = ref => {
+    window.scrollTo({
+      behavior: "smooth",
+      top: ref.currentl.offestTop
+    })
+  }
+
+  function getStyle (isActive) {
+      return isActive ? tabStyle.active_tab : tabStyle.default_tab
+  }
+
+  const handleChange = (event, newValue) => {
+    setValue(newValue);
+    scrollElement[newValue].current.scrollIntoView({ behavior: 'smooth' })
+  };
 
   return (
     <div className={`side-menu ${inactive ? "inactive" : ""}`}>
@@ -92,11 +100,14 @@ const SideMenu = (props) => {
       <div className="main-menu">
         <ul>
           {menuItems.map((menuItem, index) => (
-            menuItem.name == Focus ?
+            menuItem.name == Focus ? Focus === "Search" && props.fundi ?
+            <>
             <Button variant="outlined" 
             href={menuItem.to}
             startIcon={<i class={menuItem.iconClassName} style={{marginRight: "10px", color: "#2A9F3D"}}></i>}
-            style={{borderRadius: "15px",
+            style={{
+            borderRadius: "15px",
+            height: "40px",
             width: '200px',
             marginTop: "15px",
             backgroundColor: "#fff",
@@ -108,11 +119,46 @@ const SideMenu = (props) => {
             onClick={()=>{setFocus(menuItem.name)}}
             >
               {menuItem.name}
-            </Button>:
+            </Button>
+            <Tabs
+            TabIndicatorProps={{style: {background:"#2A9F3D", left: 0}}}
+              orientation="vertical"
+              variant="scrollable"
+              value={Value}
+              onChange={handleChange}
+              aria-label="Vertical tabs example"
+              sx={{ borderRight: 1, borderColor: 'divider' }}
+              >
+                <Tab label="Important Stat" style={ getStyle(Value === 0) } {...a11yProps(0)} />
+                <Tab label="Summary Growth" style={ getStyle(Value === 1) } {...a11yProps(1)} />
+                <Tab label="Finance Rate" style={ getStyle(Value === 2) } {...a11yProps(2)} />
+                <Tab label="Finance Summary" style={ getStyle(Value === 3) } {...a11yProps(3)} />
+            </Tabs>
+            </>
+            :
+            <Button variant="outlined" 
+            href={menuItem.to}
+            startIcon={<i class={menuItem.iconClassName} style={{marginRight: "10px", color: "#2A9F3D"}}></i>}
+            style={{borderRadius: "15px",
+            height: "40px",
+            width: '200px',
+            marginTop: "15px",
+            backgroundColor: "#fff",
+            border: '3px solid',
+            justifyContent: "flex-start",
+            borderColor: "#2A9F3D",
+            fontWeight: "500",
+            color: "black"}}
+            onClick={()=>{setFocus(menuItem.name)}}
+            >
+              {menuItem.name}
+            </Button>
+            :
             <Button variant="text"
             href={menuItem.to}
             startIcon={<i class={menuItem.iconClassName} style={{margin: "0 10px 0 10px", color: "#B9B9B9"}}></i>}
             style={{borderRadius: "15px",
+            height: "40px",
             width: '200px',
             marginTop: "15px",
             justifyContent: "flex-start",
@@ -125,8 +171,6 @@ const SideMenu = (props) => {
           ))}
         </ul>
       </div>
-
-     
     </div>
   );
 };

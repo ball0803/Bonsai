@@ -26,7 +26,7 @@ function Search() {
   const submitAction = (e) => {
     // e.preventDefault();
     // setInput(e)
-    console.log(e.toUpperCase())
+    console.log(e)
     // setLanguage(input);
     // const upper = e.toUpperCase();
     // console.log(upper)
@@ -35,7 +35,7 @@ function Search() {
     }else{
       navigate('/404');
     }
-    setInput('');
+    // setInput('');
   };
 
   const [userData, setUserdata] = useState(false);
@@ -64,17 +64,20 @@ function Search() {
             </div>
             <Autocomplete
               tagSizeSmall
-              freeSolo
               // onSubmit={submitAction}
-              onChange={(e) => {submitAction(e.target.value)}}
+              onChange={(e) => {
+              // setInput(e.target.value)
+              submitAction(e.target.innerHTML)
+              }}
               id="free-solo-2-demo"
               disableClearable
-              limitTags={5}
               options={stockList}
               renderInput={(params) => (
                 <TextField
+                // if(e.keyCode === '13'){submitAction(e.value)}
+                  onKeyDown={(e)=>{e.key === "Enter" ? submitAction(e.target.value): null}}
                   {...params}
-                  label="Search input"
+                  label="พิมพ์ชื่อหุ้นที่ต้องการค้นหา"
                   InputProps={{
                     ...params.InputProps,
                     type: 'search',

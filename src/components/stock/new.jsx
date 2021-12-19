@@ -12,6 +12,7 @@ import { onSnapshot, collection, query, where, getDocs, limit, orderBy, toDate, 
 import Posts from '../pagination/post';
 import SideMenu from '../SideMenu';
 import Pagination from '@mui/material/Pagination';
+import axios from 'axios';
 
 const theme = createTheme({
   typography: {
@@ -29,18 +30,21 @@ function News() {
   const [loading, setLoading] = useState(false);
   const [currentPage, setCurrentPage] = useState(1);
   const [postsPerPage] = useState(9);
-  const handleChange = (event, value) => {
-    setCurrentPage(value);
-    window.scroll(0, 0)
-  };
+  const [ViewerIP, setViewerIP] = useState(null)
+
   useEffect(() => {
     const fetchPosts = async () => {
       setLoading(true);
+      axios.get("https://api.ipify.org?format=json")
+      .then((res)=>{if(res.data){setViewerIP(res.data.ip.toString().replaceAll(".", "-"))}})
+
         const newsRef = collection(db, "News");
         const q = query(newsRef, where('tag', 'array-contains-any', [stock]), orderBy('date', 'desc'), limit(900))
           onSnapshot(q, (snapshot)=>{
-              snapshot.docs.map((doc)=>{
-              setPosts(posts => [...posts, doc.data()])
+            snapshot.docs.map((doc)=>{
+                const data = doc.data()
+                data['id'] = doc.id
+                setPosts(posts => [...posts, data])
               })
           })
 
@@ -57,22 +61,27 @@ function News() {
   const currentPosts = posts.slice(indexOfFirstPost, indexOfLastPost);
 
   // Change page
-  const paginate = pageNumber => setCurrentPage(pageNumber);
+  const handleChange = (event, value) => {
+    setCurrentPage(value);
+    window.scroll(0, 0)
+  };
   return (
       <>
       <SideMenu focus="Search"/>
       <div className="container">
         <Typography component="div" theme={theme}>
-        <div className='stock-box'>
+        {/* <div className='stock-box'>
         <Box className="stock-title">{stock}</Box>
+        </div> */}
+        <Typography variant='h2'>{stock}</Typography>
             <Box>Page: {currentPage}</Box>
-        </div>
           <button className="link-fundamental"><Link className="linkto-new" to={`/search/${stock}`}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <div className="overlink">
             <FaRegNewspaper className="link-logo" />
             <Box className="link-fundamental-text">
             &nbsp;&nbsp;&nbsp;Fundamental&nbsp;
             </Box>
+            
             <IoIosArrowForward
               className="link-logo"
               style={{ color: "#2EAA49" }}
@@ -80,7 +89,7 @@ function News() {
           </button>
         </Typography>
         <br/>
-        <Posts posts={currentPosts} loading={loading} />
+        <Posts posts={currentPosts} loading={loading} ip={ViewerIP}/>
         <Pagination page={currentPage}
         className="center-page"
         count={Math.ceil(posts.length / postsPerPage)}

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Link, useParams} from 'react-router-dom';
 import { createTheme, Typography } from "@mui/material";
 import "./stock.css";
@@ -9,6 +9,9 @@ import { Grid } from "@mui/material";
 import ReactApexChart from 'react-apexcharts';
 import SideMenu from '../SideMenu';
 import axios from 'axios';
+import { IconButton } from '@mui/material';
+import { Button } from '@mui/material';
+import ArrowCircleUpOutlinedIcon from '@mui/icons-material/ArrowCircleUpOutlined';
 
 const theme = createTheme({
     typography: {
@@ -17,8 +20,11 @@ const theme = createTheme({
   });
 
 function Fundimental() {
-  const [language, setLanguage] = useState('');
   const { stock } = useParams();
+  const IS = useRef(null)
+  const SG = useRef(null)
+  const FR = useRef(null)
+  const FS = useRef(null)
 
   console.log(stock)
 
@@ -26,7 +32,6 @@ function Fundimental() {
   useEffect(() => {
     axios.get(`https://bonsai-finan-api.herokuapp.com/ticker=${stock}.BK&period=3mo&interval=1d`).then((res)=>{
       res.data.result.map((data)=>{
-        // console.log(data.Date)
         setData(Data => [...Data, [data.Date, data.Open.toFixed(2), data.High.toFixed(2), data.Low.toFixed(2), data.Close.toFixed(2)]])
       })
     })
@@ -40,6 +45,7 @@ function Fundimental() {
     )
       .then((response) => response.json())
       .then((userData) => setUserdata(userData));
+      const IS = document.getElementById('IS')
   }, []);
 
   if (!userData) {
@@ -52,16 +58,21 @@ function Fundimental() {
       -5
     )
   };
-
   return (
     <>
-      <SideMenu focus="Search"/>
+      <div className="test">
+        <Button onClick={()=>{window.scrollTo({top: 0, behavior: "smooth"})}} style={{borderRadius: "50px", width: "50px", height: "50px", color: 'green'}}>
+        <ArrowCircleUpOutlinedIcon fontSize='large'/>
+        </Button>
+      </div>
+      <SideMenu focus="Search" IS={IS} SG={SG} FR={FR} FS={FS} fundi={true}/>
       <div className="container">
         <div className='fadedi'>
           <Typography component="div" theme={theme}>
-          <div className='stock-box'>
+          {/* <div className='stock-box'>
             <Box className="stock-title">{stock}</Box>
-            </div>
+            </div> */}
+            <Typography variant='h2'>{stock}</Typography>
             <button className="link-new"><Link className="linkto-new" to={`/news/${stock}`}>
               <div className="overlink-new">&nbsp;&nbsp;&nbsp;&nbsp;
               <FaRegNewspaper className="link-logo" />
@@ -96,7 +107,7 @@ function Fundimental() {
     </div>
 
 
-            <Box className="fundamental-topic">สถิติสำคัญ</Box>
+            <Box ref={IS} id="IS" className="fundamental-topic">สถิติสำคัญ</Box>
             <div className="over">
               <Grid container>
                 <Grid className="timeline" item xs={3.5}>
@@ -198,7 +209,7 @@ function Fundimental() {
                 ))}
               </Grid>
             </div>
-            <Box className="fundamental-topic">สรุปการเติบโต</Box>
+            <Box ref={SG} id="SG" className="fundamental-topic">สรุปการเติบโต</Box>
             <Grid container>
               <Grid className="timeline" item xs={3.5}>
                 <p>{stock}</p>
@@ -285,7 +296,7 @@ function Fundimental() {
               ))}
             </Grid>
 
-            <Box className="fundamental-topic">อัตราส่วนทางการเงิน</Box>
+            <Box ref={FR} id="FR" className="fundamental-topic">อัตราส่วนทางการเงิน</Box>
             <Grid container>
               <Grid className="timeline" item xs={3.5}>
                 <p>{stock}</p>
@@ -378,7 +389,7 @@ function Fundimental() {
                 </Grid>
               ))}
             </Grid>
-            <Box className="fundamental-topic">สรุปการเงิน</Box>
+            <Box ref={FS} id="FS"className="fundamental-topic">สรุปการเงิน</Box>
             <Grid container>
               <Grid className="timeline" item xs={3.5}>
                 <p>{stock}</p>
@@ -531,8 +542,8 @@ function Fundimental() {
             </Typography>
         </div>
       </div>
+
     </>
-    
   );
 };
 

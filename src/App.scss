@@ -141,6 +141,10 @@ body{
     box-sizing: border-box;
 }
 
+.active{
+    border-right: 2 solid red;
+    color: #122324;
+}
 
 
 @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,1000,2000,3000,4000,5000,6000,7000,8000,9001,1001,2001,3001,4001,5001,6001,7001,8001,900&display=swap');

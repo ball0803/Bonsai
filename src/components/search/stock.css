@@ -227,3 +227,9 @@
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
+
+.test{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
