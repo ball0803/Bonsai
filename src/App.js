@@ -9,15 +9,12 @@ import {
   Link,
   Redirect
 } from "react-router-dom";
-import SideMenu, { menuItems } from "./components/SideMenu";
 import { useState } from "react";
-
-import Home from "./components/home/home";
 
 import Welcome from "./components/welcome";
 import Dashboard from "./components/dashboard/dashboard";
 import Fundimental from "./components/search/fundimental";
-import Loading from "./components/pagination/loading";
+import Home from "./components/Home/home";
 import Graph from "./components/graph/graphset";
 import ErrorPage from "./components/errorPage";
 
@@ -28,12 +25,10 @@ import About from "./components/about/about";
 import Tutorial from "./components/tutorial/tutorial";
 
 function App(){
-  const [inactive, setInactive] = useState(false);
-
     return (
       <Router history={History}>
           {<Routes>
-              <Route exact path={"/"} element={<Loading/>} />
+              <Route exact path={"/"} element={<Home/>} />
         
               <Route path={"/dashboard"} element={<Dashboard/>} />
               <Route path={"/tutorial"} element={<Tutorial/>} />

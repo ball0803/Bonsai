@@ -9,7 +9,7 @@ import { IoIosArrowForward } from "react-icons/io";
 import { Grid } from "@mui/material";
 import {db} from "../../Firebase";
 import { onSnapshot, collection, query, where, getDocs, limit, orderBy, toDate, get } from "firebase/firestore";
-import Posts from '../pagination/post';
+import Posts from '../Home/post';
 import SideMenu from '../SideMenu';
 import Pagination from '@mui/material/Pagination';
 import axios from 'axios';
@@ -70,9 +70,6 @@ function News() {
       <SideMenu focus="Search"/>
       <div className="container">
         <Typography component="div" theme={theme}>
-        {/* <div className='stock-box'>
-        <Box className="stock-title">{stock}</Box>
-        </div> */}
         <Typography variant='h2'>{stock}</Typography>
             <Box>Page: {currentPage}</Box>
           <button className="link-fundamental"><Link className="linkto-new" to={`/search/${stock}`}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;

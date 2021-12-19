@@ -8,21 +8,26 @@ import { Box } from '@mui/system';
 import SideMenu from '../SideMenu';
 import Pagination from '@mui/material/Pagination';
 import { Typography } from '@mui/material';
+import Backdrop from '@mui/material/Backdrop';
+import CircularProgress from '@mui/material/CircularProgress';
 import axios from 'axios';
 
-const Loading = (props) => {
+const Home = () => {
   const [posts, setPosts] = useState([]);
   const [loading, setLoading] = useState(false);
   const [currentPage, setCurrentPage] = useState(1);
   const [postsPerPage] = useState(9);
   const [ViewerIP, setViewerIP] = useState(null)
-  // console.log(ViewerIP.ip.toString().replaceAll(".", "-"))
 
   useEffect(() => {
     const fetchPosts = async () => {
-      setLoading(true);
       axios.get("https://api.ipify.org?format=json")
-      .then((res)=>{if(res.data){setViewerIP(res.data.ip.toString().replaceAll(".", "-"))}})
+      .then((res)=>{
+        if(res.data){
+          setViewerIP(res.data.ip.toString().replaceAll(".", "-"))
+        }
+        setLoading(true)
+      })
 
       const newsRef = collection(db, "News");
       const q = query(newsRef, orderBy('date', 'desc'), limit(180))
@@ -34,10 +39,10 @@ const Loading = (props) => {
             setPosts(posts => [...posts, data])
             })
         })
-      setLoading(false);
     };
 
     fetchPosts();
+   ;
   }, []);
 
   // Get current posts
@@ -50,32 +55,40 @@ const Loading = (props) => {
     setCurrentPage(value);
     window.scroll(0, 0)
   };
-  if (loading) {
-    return <h2>Loading...</h2>;
-  }else{
+
   return (
     <>
-    <SideMenu focus="Home"/>
-    <div className="container">
-        <Typography variant="h2" style={{fontFamily: 'Kanit'}}>Recent News</Typography>
-        <Box>Page: {currentPage}</Box>
-      <br/>
-        <Posts posts={currentPosts} loading={loading} ip={ViewerIP}/>
-        <Pagination page={currentPage}
-        className="center-page"
-        count={Math.ceil(posts.length / postsPerPage)}
-        variant='outlined'
-        shape='rounded'
-        showFirstButton
-        showLastButton
-        onChange={handleChange}
-        size='large'
-         />
-        
-    </div>
-    
+      {loading ? 
+      <> 
+        <SideMenu focus="Home"/>
+        <div className="container">
+            <Typography variant="h2" style={{fontFamily: 'Kanit'}}>Recent News</Typography>
+            <Box>Page: {currentPage}</Box>
+          <br/>
+            <Posts posts={currentPosts} ip={ViewerIP}/>
+            <Pagination page={currentPage}
+            className="center-page"
+            count={Math.ceil(posts.length / postsPerPage)}
+            variant='outlined'
+            shape='rounded'
+            showFirstButton
+            showLastButton
+            onChange={handleChange}
+            size='large'
+            />
+        </div>
+      </>
+        :
+        <Backdrop
+        sx={{ color: '#fff', zIndex: (theme) => theme.zIndex.drawer + 1 }}
+        open={true}
+        >
+        <CircularProgress color="inherit" />
+        </Backdrop>
+      
+      }
     </>
-  );}
+  );
 };
 
-export default Loading;
+export default Home;
