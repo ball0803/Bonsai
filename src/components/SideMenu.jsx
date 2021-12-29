@@ -3,6 +3,8 @@ import logo from "../assets/Logo.svg";
 
 import { Typography,Box,createTheme } from '@mui/material';
 import { Button, Tab, Tabs } from "@mui/material";
+import Paper from '@mui/material/Paper';
+import { ThemeProvider, styled } from '@mui/material/styles';
 
 /**
  * @author
@@ -50,6 +52,17 @@ const SideMenu = (props) => {
   const [inactive, setInactive] = useState(false);
   const [Focus, setFocus] = useState(props.focus)
   const [Value, setValue] = useState(0)
+
+  const Item = styled(Paper)(({ theme }) => ({
+    ...theme.typography.body2,
+    textAlign: 'center',
+    color: theme.palette.text.secondary,
+    height: 60,
+    lineHeight: '60px',
+    borderRadius: "20px",
+    background: "#253839"
+  }));
+
   function a11yProps(index) {
     return {
       id: `vertical-tab-${index}`,
@@ -88,7 +101,7 @@ const SideMenu = (props) => {
   };
 
   return (
-    <div className={`side-menu ${inactive ? "inactive" : ""}`}>
+    <Item elevation={2} className={`side-menu`}>
       <div className="top-section">
           <img src={logo} alt="webscript" className="logo"/>
         <Typography className="side-brand" component="div" theme={theme}>
@@ -96,7 +109,6 @@ const SideMenu = (props) => {
             <Box className="side-text">Stock News</Box>
           </Typography>
       </div>
-      
       <div className="main-menu">
         <ul>
           {menuItems.map((menuItem, index) => (
@@ -171,7 +183,7 @@ const SideMenu = (props) => {
           ))}
         </ul>
       </div>
-    </div>
+    </Item>
   );
 };
 

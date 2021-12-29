@@ -33,7 +33,7 @@ const Home = () => {
       const q = query(newsRef, orderBy('date', 'desc'), limit(180))
         onSnapshot(q, (snapshot)=>{
             snapshot.docs.map((doc)=>{
-              // console.log(doc.id)
+              console.log(doc)
             const data = doc.data()
             data['id'] = doc.id
             setPosts(posts => [...posts, data])
